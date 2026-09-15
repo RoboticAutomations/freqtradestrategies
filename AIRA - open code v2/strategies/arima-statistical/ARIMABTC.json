@@ -1,0 +1,50 @@
+{
+    "strategy_name": "ARIMABTC",
+    "params": {
+        "trailing": {
+            "trailing_stop": false,
+            "trailing_stop_positive": null,
+            "trailing_stop_positive_offset": 0.0,
+            "trailing_only_offset_is_reached": false
+        },
+        "max_open_trades": {
+            "max_open_trades": 8
+        },
+        "buy": {
+            "atr_length": 6,
+            "base_nb_candles_buy": 199,
+            "dn": 0.985,
+            "increment": 1.0005,
+            "up": 1.024,
+            "window": 18,
+            "window_1h": 25,
+            "window_4h": 10,
+            "x": 1.62,
+            "x_1h": 1.62,
+            "x_4h": 1.22
+        },
+        "sell": {
+            "moon": 81,
+            "ts0": 0.006,
+            "ts1": 0.013,
+            "ts2": 0.016,
+            "ts3": 0.036,
+            "tsl_target0": 0.043,
+            "tsl_target1": 0.069,
+            "tsl_target2": 0.072,
+            "tsl_target3": 0.1
+        },
+        "protection": {},
+        "roi": {
+            "0": 0.099,
+            "17": 0.053,
+            "44": 0.015,
+            "108": 0
+        },
+        "stoploss": {
+            "stoploss": -0.131
+        }
+    },
+    "ft_stratparam_v": 1,
+    "export_time": "2024-05-31 15:35:36.423068+00:00"
+}

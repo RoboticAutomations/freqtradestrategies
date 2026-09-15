@@ -1,0 +1,39 @@
+{
+    "rustc": 17273738520181233363,
+    "features": "[\"bundled\", \"bundled_bindings\", \"cc\", \"default\", \"min_sqlite_version_3_14_0\", \"pkg-config\", \"vcpkg\"]",
+    "declared_features": "[\"bindgen\", \"buildtime_bindgen\", \"bundled\", \"bundled-sqlcipher\", \"bundled-sqlcipher-vendored-openssl\", \"bundled-windows\", \"bundled_bindings\", \"cc\", \"default\", \"in_gecko\", \"min_sqlite_version_3_14_0\", \"openssl-sys\", \"pkg-config\", \"preupdate_hook\", \"session\", \"sqlcipher\", \"unlock_notify\", \"vcpkg\", \"wasm32-wasi-vfs\", \"winsqlite3\", \"with-asan\"]",
+    "target": 17883862002600103897,
+    "profile": 2225463790103693989,
+    "path": 18081263794633153782,
+    "deps": [
+        [
+            3214373357989284387,
+            "pkg_config",
+            false,
+            6988248315177147955
+        ],
+        [
+            7493512650103568011,
+            "cc",
+            false,
+            10305984065395772266
+        ],
+        [
+            12933202132622624734,
+            "vcpkg",
+            false,
+            6128301046683130933
+        ]
+    ],
+    "local": [
+        {
+            "CheckDepInfo": {
+                "dep_info": "debug\\.fingerprint\\libsqlite3-sys-db7f09a954948ba5\\dep-build-script-build-script-build",
+                "checksum": false
+            }
+        }
+    ],
+    "rustflags": [],
+    "config": 2069994364910194474,
+    "compile_kind": 0
+}

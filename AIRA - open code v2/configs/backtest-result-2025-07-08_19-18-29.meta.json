@@ -1,0 +1,10 @@
+{
+    "NS2": {
+        "run_id": "7661c0a88bfd83b14bcd00549cb22bb200716e54",
+        "backtest_start_time": 1752012874,
+        "timeframe": "1h",
+        "timeframe_detail": "5m",
+        "backtest_start_ts": 1704067200,
+        "backtest_end_ts": 1751241600
+    }
+}

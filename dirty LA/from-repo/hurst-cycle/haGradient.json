@@ -1,0 +1,75 @@
+{
+    "strategy_name": "haGradient",
+    "params": {
+        "trailing": {
+            "trailing_stop": false,
+            "trailing_stop_positive": 0.005,
+            "trailing_stop_positive_offset": 0.035,
+            "trailing_only_offset_is_reached": true
+        },
+        "buy": {
+            "cp_offset": 1,
+            "entryX": 0.988,
+            "h0_offset": 2,
+            "h1_offset": 3,
+            "h2_offset": 5,
+            "increment": 1.0008,
+            "l_window_size": 33,
+            "sum_offset": 9,
+            "suppress_cp": 23,
+            "suppress_h0": -12,
+            "suppress_h1": 3,
+            "suppress_h2": -12,
+            "suppress_sum": -24,
+            "u_window_size": 104,
+            "use0": false,
+            "use1": true,
+            "use2": false,
+            "use3": false,
+            "use4": false
+        },
+        "sell": {
+            "use10": false,
+            "use11": false,
+            "use12": true,
+            "use13": false,
+            "use14": false
+        },
+        "protection": {
+            "base_trades": 7,
+            "cooldown_lookback": 7,
+            "lowprofit_only_per_pair": true,
+            "lowprofit_protection_lookback": 20,
+            "lowprofit_required_profit": -0.07,
+            "lowprofit_stop_duration": 38,
+            "lowprofit_trade_limit": 9,
+            "maxdrawdown_allowed_drawdown": -0.04,
+            "maxdrawdown_protection_lookback": 3,
+            "maxdrawdown_stop_duration": 2,
+            "maxdrawdown_trade_limit": 14,
+            "stepSize": 1,
+            "stop_duration": 16,
+            "stop_protection_only_per_pair": true,
+            "stop_protection_only_per_side": true,
+            "stop_protection_required_profit": -0.01,
+            "stop_protection_trade_limit": 2,
+            "use_lowprofit_protection": false,
+            "use_maxdrawdown_protection": false,
+            "use_stop_protection": true
+        },
+        "roi": {
+            "0": 0.214,
+            "81": 0.105,
+            "346": 0.053,
+            "789": 0
+        },
+        "stoploss": {
+            "stoploss": -0.243
+        },
+        "max_open_trades": {
+            "max_open_trades": 3
+        }
+    },
+    "ft_stratparam_v": 1,
+    "export_time": "2025-01-30 21:10:42.248857+00:00"
+}

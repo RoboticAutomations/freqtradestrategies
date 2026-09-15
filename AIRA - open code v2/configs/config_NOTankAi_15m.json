@@ -1,0 +1,343 @@
+{
+    "max_open_trades": 5,
+    "stake_currency": "USDT",
+    "stake_amount": 100,
+    "tradable_balance_ratio": 0.9,
+    "dry_run_wallet": 1000,
+    "fiat_display_currency": "USD",
+    "timeframe": "15m",
+    "trading_mode": "futures",
+    "margin_mode": "isolated",
+    "freqaimodel": "LightGBMRegressor",
+    "stoploss_on_exchange": true,
+    "dry_run": true,
+    "cancel_open_orders_on_exit": false,
+    "unfilledtimeout": {
+        "unit": "minutes",
+        "enter": 10,
+        "exit": 30
+    },
+    "order_types": {
+        "entry": "limit",
+        "exit": "limit",
+        "emergency_exit": "market",
+        "force_entry": "market",
+        "force_exit": "market",
+        "stoploss": "market",
+        "stoploss_on_exchange": false,
+        "stoploss_on_exchange_interval": 60
+    },
+    "entry_pricing": {
+        "price_side": "same",
+        "ask_last_balance": 0,
+        "use_order_book": true,
+        "order_book_top": 1,
+        "check_depth_of_market": {
+            "enabled": false,
+            "bids_to_ask_delta": 1
+        }
+    },
+    "exit_pricing": {
+        "price_side": "same",
+        "use_order_book": true,
+        "order_book_top": 1
+    },
+    "exchange": {
+        "name": "binance",
+        "key": "",
+        "secret": "",
+        "sandbox": false,
+        "tick_interval": 60,
+        "ccxt_config": {
+            "enableRateLimit": true
+        },
+        "ccxt_async_config": {
+            "enableRateLimit": true,
+            "rateLimit": 200
+        },
+        "pair_whitelist": [
+            "ETH/USDT:USDT",
+            "BTC/USDT:USDT",
+            "SOL/USDT:USDT",
+            "PEOPLE/USDT:USDT",
+            "ETHFI/USDT:USDT",
+            "EDU/USDT:USDT",
+            "ETC/USDT:USDT",
+            "XRP/USDT:USDT",
+            "BNB/USDT:USDT",
+            "WIF/USDT:USDT",
+            "ENA/USDT:USDT",
+            "OP/USDT:USDT",
+            "NEAR/USDT:USDT",
+            "WLD/USDT:USDT",
+            "ENS/USDT:USDT",
+            "BOME/USDT:USDT",
+            "ORDI/USDT:USDT",
+            "AVAX/USDT:USDT",
+            "LINK/USDT:USDT",
+            "LDO/USDT:USDT",
+            "ADA/USDT:USDT",
+            "GALA/USDT:USDT",
+            "LTC/USDT:USDT",
+            "FTM/USDT:USDT",
+            "DOT/USDT:USDT",
+            "TRB/USDT:USDT",
+            "BCH/USDT:USDT",
+            "UNFI/USDT:USDT",
+            "PENDLE/USDT:USDT",
+            "SUI/USDT:USDT",
+            "AEVO/USDT:USDT",
+            "UNI/USDT:USDT",
+            "PYTH/USDT:USDT",
+            "TIA/USDT:USDT",
+            "MANTA/USDT:USDT",
+            "GMT/USDT:USDT",
+            "JTO/USDT:USDT",
+            "APT/USDT:USDT",
+            "ATOM/USDT:USDT",
+            "W/USDT:USDT",
+            "BLUR/USDT:USDT",
+            "STX/USDT:USDT",
+            "TON/USDT:USDT",
+            "INJ/USDT:USDT",
+            "EOS/USDT:USDT",
+            "STRK/USDT:USDT",
+            "BNX/USDT:USDT",
+            "DYDX/USDT:USDT",
+            "ZRX/USDT:USDT",
+            "SEI/USDT:USDT",
+            "LPT/USDT:USDT",
+            "AR/USDT:USDT",
+            "TAO/USDT:USDT",
+            "RUNE/USDT:USDT",
+            "SAND/USDT:USDT",
+            "SAGA/USDT:USDT",
+            "JASMY/USDT:USDT",
+            "ALT/USDT:USDT",
+            "CRV/USDT:USDT",
+            "ICP/USDT:USDT",
+            "TRX/USDT:USDT",
+            "GRT/USDT:USDT",
+            "AAVE/USDT:USDT",
+            "TNSR/USDT:USDT",
+            "BAKE/USDT:USDT",
+            "YGG/USDT:USDT",
+            "XAI/USDT:USDT",
+            "RSR/USDT:USDT",
+            "THETA/USDT:USDT",
+            "SSV/USDT:USDT",
+            "PIXEL/USDT:USDT",
+            "API3/USDT:USDT",
+            "HBAR/USDT:USDT",
+            "AXS/USDT:USDT",
+            "NEO/USDT:USDT",
+            "REN/USDT:USDT",
+            "CHZ/USDT:USDT",
+            "CFX/USDT:USDT",
+            "TRU/USDT:USDT",
+            "HIFI/USDT:USDT",
+            "UMA/USDT:USDT",
+            "METIS/USDT:USDT",
+            "MANA/USDT:USDT",
+            "PORTAL/USDT:USDT",
+            "IMX/USDT:USDT",
+            "STG/USDT:USDT",
+            "SUSHI/USDT:USDT",
+            "MINA/USDT:USDT",
+            "ACE/USDT:USDT",
+            "ALGO/USDT:USDT",
+            "MASK/USDT:USDT",
+            "XLM/USDT:USDT",
+            "DGB/USDT:USDT",
+            "OMNI/USDT:USDT",
+            "ENJ/USDT:USDT",
+            "CKB/USDT:USDT",
+            "SNX/USDT:USDT",
+            "OM/USDT:USDT",
+            "AUDIO/USDT:USDT",
+            "BUSD/USDT:USDT",
+            "DENT/USDT:USDT",
+            "GLMR/USDT:USDT",
+            "HOT/USDT:USDT",
+            "IOTA/USDT:USDT",
+            "KAVA/USDT:USDT",
+            "KSM/USDT:USDT",
+            "MATIC/USDT:USDT",
+            "OCEAN/USDT:USDT",
+            "OMG/USDT:USDT",
+            "PEPE/USDT:USDT",
+            "REEF/USDT:USDT",
+            "ROSE/USDT:USDT",
+            "SC/USDT:USDT",
+            "WAVES/USDT:USDT",
+            "XEM/USDT:USDT",
+            "XMR/USDT:USDT",
+            "XTZ/USDT:USDT"
+        ],
+        "pair_blacklist": [
+            "TFUEL/BTC",
+            "ONE/BTC",
+            "ATOM/BTC",
+            "XMR/BTC",
+            "BNB/BUSD",
+            "BNB/BTC",
+            "BNB/ETH",
+            "BNB/EUR",
+            "BNB/NGN",
+            "BNB/PAX",
+            "BNB/RUB",
+            "BNB/TRY",
+            "BNB/TUSD",
+            "BNB/USDC",
+            "BNB/USDS",
+            "EUR/USDT:USDT",
+            ".*UP/USDT:USDT",
+            ".*DOWN/USDT:USDT",
+            ".*BEAR/USDT:USDT",
+            ".*BULL/USDT:USDT",
+            "DOGE/USDT:USDT",
+            "BRD/BTC"
+        ]
+    },
+    "pairlists": [
+        {
+            "method": "StaticPairList"
+        },
+        {
+            "method": "PriceFilter",
+            "min_price": 0.05,
+            "low_price_ratio": 0.01
+        }
+    ],
+    "edge": {
+        "enabled": false,
+        "process_throttle_secs": 3600,
+        "calculate_since_number_of_days": 7,
+        "allowed_risk": 0.01,
+        "stoploss_range_min": -0.01,
+        "stoploss_range_max": -0.1,
+        "stoploss_range_step": -0.01,
+        "minimum_winrate": 0.6,
+        "minimum_expectancy": 0.2,
+        "min_trade_number": 10,
+        "max_trade_duration_minute": 1440,
+        "remove_pumps": false
+    },
+    "telegram": {
+        "enabled": false,
+        "token": "REDACTED-BY-REPO-HYGIENE",
+        "chat_id": "",
+        "keyboard": [
+            [
+                "/daily",
+                "/stats",
+                "/balance",
+                "/profit"
+            ],
+            [
+                "/status table",
+                "/performance"
+            ],
+            [
+                "/reload_config",
+                "/count",
+                "/logs"
+            ]
+        ],
+        "notification_settings": {
+            "status": "silent",
+            "protection_trigger_global": "on",
+            "warning": "on",
+            "startup": "off",
+            "entry": "silent",
+            "entry_fill": "on",
+            "entry_cancel": "on",
+            "exit_cancel": "on",
+            "exit_fill": "on",
+            "exit": {
+                "roi": "on",
+                "emergency_exit": "on",
+                "force_exit": "on",
+                "exit_signal": "on",
+                "trailing_stop_loss": "on",
+                "stop_loss": "on",
+                "stoploss_on_exchange": "on",
+                "custom_exit": "on"
+            },
+            "strategy_msg": "on"
+        },
+        "balance_dust_level": 0.01
+    },
+    "freqai": {
+        "enabled": true,
+        "purge_old_models": 2,
+        "train_period_days": 15,
+        "backtest_period_days": 7,
+        "live_retrain_hours": 0,
+        "identifier": "NoTankai15m",
+        "feature_parameters": {
+            "include_timeframes": [
+                "15m",
+                "1h",
+                "4h",
+                "1d"
+            ],
+            "include_corr_pairlist": [
+                "BTC/USDT:USDT",
+                "ETH/USDT:USDT"
+            ],
+            "label_period_candles": 20,
+            "include_shifted_candles": 2,
+            "DI_threshold": 0.9,
+            "weight_factor": 0.9,
+            "principal_component_analysis": false,
+            "use_SVM_to_remove_outliers": true,
+            "indicator_periods_candles": [
+                10,
+                20
+            ],
+            "plot_feature_importances": 0
+        },
+        "data_split_parameters": {
+            "test_size": 0.33,
+            "random_state": 1
+        },
+        "model_training_parameters": {}
+    },
+    "api_server": {
+        "enabled": true,
+        "listen_ip_address": "0.0.0.0",
+        "listen_port": 8080,
+        "verbosity": "error",
+        "enable_openapi": false,
+        "jwt_secret_key": "REDACTED-BY-REPO-HYGIENE",
+        "ws_token": "REDACTED-BY-REPO-HYGIENE",
+        "CORS_origins": [
+            "http://localhost:8080",
+            "http://localhost:8081",
+            "http://localhost:8082"
+        ],
+        "username": "REDACTED-BY-REPO-HYGIENE",
+        "password": "REDACTED-BY-REPO-HYGIENE"
+    },
+    "bot_name": "korenhs",
+    "initial_state": "running",
+    "force_entry_enable": false,
+    "internals": {
+        "process_throttle_secs": 5
+    },
+    "margin": {
+        "enabled": true,
+        "leverage": 1.0
+    },
+    "logging": {
+        "loglevel": "DEBUG",
+        "logfile": "/freqtrade/user_data/logs/freqtrade.log"
+    },
+    "logger": {
+        "format": "%(asctime)s - %(name)s - %(levelname)s - %(message)s",
+        "level": "INFO",
+        "file": "/path/to/logfile.log",
+        "tensorboard": false
+    }
+}

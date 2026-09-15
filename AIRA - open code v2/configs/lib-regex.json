@@ -1,0 +1,45 @@
+{
+    "rustc": 17273738520181233363,
+    "features": "[\"perf\", \"perf-backtrack\", \"perf-cache\", \"perf-dfa\", \"perf-inline\", \"perf-literal\", \"perf-onepass\", \"std\"]",
+    "declared_features": "[\"default\", \"logging\", \"pattern\", \"perf\", \"perf-backtrack\", \"perf-cache\", \"perf-dfa\", \"perf-dfa-full\", \"perf-inline\", \"perf-literal\", \"perf-onepass\", \"std\", \"unicode\", \"unicode-age\", \"unicode-bool\", \"unicode-case\", \"unicode-gencat\", \"unicode-perl\", \"unicode-script\", \"unicode-segment\", \"unstable\", \"use_std\"]",
+    "target": 5796931310894148030,
+    "profile": 10712413002018579216,
+    "path": 6214489430176689706,
+    "deps": [
+        [
+            198136567835728122,
+            "memchr",
+            false,
+            12876221587443280502
+        ],
+        [
+            3030539787503978792,
+            "regex_automata",
+            false,
+            13706287891765040490
+        ],
+        [
+            14659614821474690979,
+            "regex_syntax",
+            false,
+            15459971896151486843
+        ],
+        [
+            15324871377471570981,
+            "aho_corasick",
+            false,
+            17111119525389857762
+        ]
+    ],
+    "local": [
+        {
+            "CheckDepInfo": {
+                "dep_info": "debug\\.fingerprint\\regex-26074f6f68439410\\dep-lib-regex",
+                "checksum": false
+            }
+        }
+    ],
+    "rustflags": [],
+    "config": 2069994364910194474,
+    "compile_kind": 0
+}

@@ -1,0 +1,101 @@
+{
+    "dry_run": false,
+    "strategy": "SMAOffset_Hippocritical_dca",
+    "max_open_trades": 3,
+    "stake_currency": "USDT",
+    "stake_amount": "unlimited",
+    "tradable_balance_ratio": 0.99,
+    "cancel_open_orders_on_exit": false,
+    "use_exit_signal": true,
+    "trailing_stop": false,
+    "trailing_only_offset_is_reached": false,
+    "timeframe": "5m",
+    "unfilledtimeout": {
+        "entry": 5,
+        "exit": 30,
+        "unit": "minutes"
+    },
+    "entry_pricing": {
+        "price_side": "other",
+        "use_order_book": true,
+        "order_book_top": 1,
+        "price_last_balance": 0.0,
+        "check_depth_of_market": {
+            "enabled": false,
+            "bids_to_ask_delta": 1
+        }
+    },
+    "exit_pricing": {
+        "price_side": "other",
+        "use_order_book": true,
+        "order_book_top": 1
+    },
+    "order_types": {
+        "entry": "limit",
+        "exit": "market",
+        "emergency_exit": "market",
+        "force_entry": "market",
+        "force_exit": "market",
+        "stoploss": "market",
+        "stoploss_on_exchange": false,
+        "stoploss_on_exchange_interval": 60
+    },
+    "protections": [
+        {
+            "method": "CooldownPeriod",
+            "stop_duration_candles": 4
+        },
+        {
+            "method": "MaxDrawdown",
+            "lookback_period_candles": 48,
+            "trade_limit": 20,
+            "stop_duration_candles": 4,
+            "max_allowed_drawdown": 0.2
+        }
+    ],
+    "force_entry_enable": false,
+    "internals": {
+        "process_throttle_secs": 5
+    },
+    "pairlists": [
+        {
+            "method": "VolumePairList",
+            "number_assets": 100,
+            "sort_key": "quoteVolume",
+            "refresh_period": 1800
+        },
+        {
+            "method": "AgeFilter",
+            "min_days_listed": 15
+        },
+        {
+            "method": "PriceFilter",
+            "low_price_ratio": 0.003
+        },
+        {
+            "method": "SpreadFilter",
+            "max_spread_ratio": 0.005
+        },
+        {
+            "method": "RangeStabilityFilter",
+            "lookback_days": 3,
+            "min_rate_of_change": 0.03,
+            "refresh_period": 1800
+        },
+        {
+            "method": "VolatilityFilter",
+            "lookback_days": 3,
+            "min_volatility": 0.01,
+            "max_volatility": 0.75,
+            "refresh_period": 43200
+        },
+        {
+            "method": "VolumePairList",
+            "number_assets": 75,
+            "sort_key": "quoteVolume"
+        },
+        {
+            "method": "ShuffleFilter"
+        }
+    ]
+}

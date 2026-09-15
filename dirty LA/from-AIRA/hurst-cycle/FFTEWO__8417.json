@@ -1,0 +1,67 @@
+{
+    "strategy_name": "FFTEWO",
+    "params": {
+        "roi": {},
+        "trailing": {
+            "trailing_stop": false,
+            "trailing_stop_positive": null,
+            "trailing_stop_positive_offset": 0.0,
+            "trailing_only_offset_is_reached": false
+        },
+        "buy": {
+            "ewo_bear_x": 1.76,
+            "ewo_bull_x": 1.13,
+            "ewo_high_x": 1.38,
+            "ewo_lo_limit": -0.5,
+            "increment": 1.0007,
+            "l_window_size": 39,
+            "rsi_buy_high": 55,
+            "rsi_buy_low": 40,
+            "u_window_size": 122,
+            "use0": false,
+            "use1": true,
+            "use2": false,
+            "use3": true,
+            "use4": true,
+            "use5": true,
+            "use6": false,
+            "use7": false
+        },
+        "sell": {
+            "use10": false,
+            "use11": false,
+            "use12": false,
+            "use13": false,
+            "use8": false,
+            "use9": false
+        },
+        "protection": {
+            "cooldown_lookback": 5,
+            "lowprofit_only_per_pair": false,
+            "lowprofit_protection_lookback": 6,
+            "lowprofit_required_profit": 0.0,
+            "lowprofit_stop_duration": 60,
+            "lowprofit_trade_limit": 4,
+            "maxdrawdown_allowed_drawdown": 0.0,
+            "maxdrawdown_protection_lookback": 6,
+            "maxdrawdown_stop_duration": 6,
+            "maxdrawdown_trade_limit": 10,
+            "stop_duration": 5,
+            "stop_protection_only_per_pair": false,
+            "stop_protection_only_per_side": false,
+            "stop_protection_required_profit": 0.0,
+            "stop_protection_trade_limit": 4,
+            "use_lowprofit_protection": true,
+            "use_maxdrawdown_protection": true,
+            "use_stop_protection": true
+        },
+        "stoploss": {
+            "stoploss": -0.289
+        },
+        "max_open_trades": {
+            "max_open_trades": -1
+        }
+    },
+    "ft_stratparam_v": 1,
+    "export_time": "2024-12-17 17:04:28.075298+00:00"
+}

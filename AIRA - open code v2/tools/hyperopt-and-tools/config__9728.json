@@ -1,0 +1,173 @@
+{
+    "trading_mode": "futures",
+    "new_pairs_days": 30,
+    "liquidation_buffer": 0.0,
+    "margin_mode": "isolated",
+    "max_open_trades": 20,
+    "stake_currency": "USDT",
+    "stake_amount": 100,
+    "tradable_balance_ratio": 1,
+    "fiat_display_currency": "USD",
+    "dry_run": true,
+    "timeframe": "4h",
+    "dataformat_ohlcv": "json",
+    "dry_run_wallet": 10000,
+    "cancel_open_orders_on_exit": true,
+    "unfilledtimeout": {
+        "entry": 1,
+        "exit": 1
+    },
+    "exchange": {
+        "name": "bybit",
+        "key": "SNyD5EQryiBRQrTi6c",
+        "secret": "REDACTED-BY-REPO-HYGIENE",
+        "ccxt_config": {
+            "enableRateLimit": true,
+            "rateLimit": 50
+        },
+        "ccxt_async_config": {
+            "enableRateLimit": true,
+            "rateLimit": 50
+        },
+        "pair_whitelist": [
+            "10000LADYS/USDT:USDT",
+            "FITFI/USDT:USDT",
+            "RSS3/USDT:USDT",
+            "JASMY/USDT:USDT",
+            "SOL/USDT:USDT"
+        ],
+        "pair_blacklist": []
+    },
+    "entry_pricing": {
+        "price_side": "same",
+        "use_order_book": true,
+        "order_book_top": 1,
+        "price_last_balance": 0.0,
+        "check_depth_of_market": {
+            "enabled": false,
+            "bids_to_ask_delta": 1
+        }
+    },
+    "exit_pricing": {
+        "price_side": "other",
+        "use_order_book": true,
+        "order_book_top": 1
+    },
+    "pairlists": [
+        {
+            "method": "StaticPairList"
+        }
+    ],
+    "freqai": {
+        "enabled": false,
+        "conv_width": 1,
+        "purge_old_models": 20,
+        "expiration_hours": 24,
+        "live_retrain_hours": 1,
+        "train_period_days": 60,
+        "backtest_period_days": 2,
+        "write_metrics_to_disk": true,
+        "identifier": "quickadapterv35-xgboost-optuna",
+        "fit_live_predictions_candles": 600,
+        "data_kitchen_thread_count": 10,
+        "weibull_outlier_threshold": 0.999,
+        "optuna_hyperopt": true,
+        "extra_returns_per_train": {
+            "DI_value_param1": 0,
+            "DI_value_param2": 0,
+            "DI_value_param3": 0,
+            "DI_cutoff": 2,
+            "&s-minima_sort_threshold": -2,
+            "&s-maxima_sort_threshold": 2
+        },
+        "feature_parameters": {
+            "include_corr_pairlist": [
+                "BTC/USDT:USDT",
+                "ETH/USDT:USDT"
+            ],
+            "include_timeframes": [
+                "30m",
+                "1h",
+                "4h",
+                "1d"
+            ],
+            "label_period_candles": 100,
+            "include_shifted_candles": 5,
+            "DI_threshold": 20,
+            "weight_factor": 0.9,
+            "indicator_periods_candles": [
+                8,
+                16,
+                32
+            ],
+            "noise_standard_deviation": 0.02,
+            "buffer_train_data_candles": 100
+        },
+        "data_split_parameters": {
+            "test_size": 0.1,
+            "random_state": 1,
+            "shuffle": false
+        },
+        "model_training_parameters": {
+            "n_estimators": 150,
+            "n_jobs": 12,
+            "verbosity": 1,
+            "alpha": 0.5,
+            "min_child_weight": 5,
+            "learning_rate": 0.1,
+            "max_depth": 6,
+            "early_stopping_rounds": 10
+        }
+    },
+    "telegram": {
+        "enabled": false,
+        "token": "REDACTED-BY-REPO-HYGIENE",
+        "chat_id": "REDACTED-BY-REPO-HYGIENE",
+        "allow_custom_messages": true,
+        "notification_settings": {
+            "status": "silent",
+            "warning": "on",
+            "startup": "silent",
+            "entry": "silent",
+            "entry_fill": "on",
+            "entry_cancel": "silent",
+            "exit": {
+                "roi": "silent",
+                "emergency_exit": "on",
+                "force_exit": "on",
+                "exit_signal": "silent",
+                "trailing_stop_loss": "on",
+                "stop_loss": "on",
+                "stoploss_on_exchange": "on",
+                "custom_exit": "silent",
+                "partial_exit": "on"
+            },
+            "exit_cancel": "on",
+            "exit_fill": "off",
+            "protection_trigger": "off",
+            "protection_trigger_global": "on",
+            "strategy_msg": "off",
+            "show_candle": "off"
+        },
+        "reload": true,
+        "balance_dust_level": 0.01
+    },
+    "api_server": {
+        "enabled": true,
+        "listen_ip_address": "0.0.0.0",
+        "listen_port": 8080,
+        "verbosity": "error",
+        "enable_openapi": false,
+        "jwt_secret_key": "REDACTED-BY-REPO-HYGIENE",
+        "ws_token": "REDACTED-BY-REPO-HYGIENE",
+        "CORS_origins": [],
+        "username": "freqtrader",
+        "password": "REDACTED-BY-REPO-HYGIENE"
+    },
+    "bot_name": "freqtrade",
+    "initial_state": "running",
+    "force_entry_enable": true,
+    "internals": {
+        "process_throttle_secs": 5
+    }
+}

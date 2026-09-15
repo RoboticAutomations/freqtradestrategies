@@ -1,0 +1,47 @@
+{
+    "strategy_name": "ARIMA_DCA_1h",
+    "params": {
+        "trailing": {
+            "trailing_stop": false,
+            "trailing_stop_positive": null,
+            "trailing_stop_positive_offset": 0.0,
+            "trailing_only_offset_is_reached": false
+        },
+        "buy": {
+            "atr_length": 23,
+            "base_nb_candles_buy": 181,
+            "dn": 0.987,
+            "increment": 1.0006,
+            "up": 1.025,
+            "window": 16,
+            "window_1h": 13,
+            "window_4h": 30,
+            "x": 1.22,
+            "x_1h": 1.39,
+            "x_4h": 1.63
+        },
+        "sell": {
+            "moon": 85,
+            "ts0": 0.005,
+            "ts1": 0.012,
+            "ts2": 0.029,
+            "ts3": 0.04,
+            "tsl_target0": 0.03,
+            "tsl_target1": 0.079,
+            "tsl_target2": 0.06,
+            "tsl_target3": 0.14
+        },
+        "protection": {},
+        "roi": {
+            "0": 0.22599999999999998,
+            "123": 0.16199999999999998,
+            "282": 0.06,
+            "549": 0
+        },
+        "stoploss": {
+            "stoploss": -0.99
+        }
+    },
+    "ft_stratparam_v": 1,
+    "export_time": "2024-06-12 09:35:44.573412+00:00"
+}

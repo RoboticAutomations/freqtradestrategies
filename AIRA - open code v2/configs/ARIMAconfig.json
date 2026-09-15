@@ -1,0 +1,105 @@
+{
+    "max_open_trades": 20,
+    "stake_currency": "USDT",
+    "stake_amount": "unlimited",
+    "tradable_balance_ratio": 0.99,
+    "fiat_display_currency": "USD",
+    "dry_run": true,
+    "dry_run_wallet": 5000,
+    "cancel_open_orders_on_exit": false,
+    "trading_mode": "spot",
+    "margin_mode": "",
+    "custom_stake_amount": 0.05,
+    "unfilledtimeout": {
+        "entry": 3,
+        "exit": 3,
+        "exit_timeout_count": 0,
+        "unit": "minutes"
+    },
+    "entry_pricing": {
+        "price_side": "other",
+        "use_order_book": true,
+        "order_book_top": 1,
+        "price_last_balance": 0.0,
+        "check_depth_of_market": {
+            "enabled": true,
+            "bids_to_ask_delta": 1
+        }
+    },
+    "exit_pricing": {
+        "price_side": "other",
+        "use_order_book": true,
+        "order_book_top": 1
+    },
+    "exchange": {
+        "name": "binanceus",
+        "key": "",
+        "secret": "",
+        "ccxt_config": {},
+        "ccxt_async_config": {},
+        "pair_whitelist": [
+            ""
+        ],
+        "pair_blacklist": [
+            ""
+        ]
+    },
+    "pairlists": [
+        {
+            "method": "VolumePairList",
+            "number_assets": 200,
+            "sort_key": "quoteVolume"
+        },
+        {
+            "method": "AgeFilter",
+            "min_days_listed": 60
+        },
+        {
+            "method": "PrecisionFilter"
+        },
+        {
+            "method": "PriceFilter",
+            "low_price_ratio": 0.01
+        },
+        {
+            "method": "SpreadFilter",
+            "max_spread_ratio": 0.005
+        },
+        {
+            "method": "RangeStabilityFilter",
+            "lookback_days": 10,
+            "min_rate_of_change": 0.01,
+            "refresh_period": 86400
+        },
+        {
+            "method": "VolatilityFilter",
+            "lookback_days": 10,
+            "min_volatility": 0.05,
+            "max_volatility": 0.5,
+            "refresh_period": 86400
+        }
+    ],
+    "telegram": {
+        "enabled": true,
+        "token": "",
+        "chat_id": ""
+    },
+    "api_server": {
+        "enabled": true,
+        "listen_ip_address": "127.0.0.1",
+        "listen_port": 8080,
+        "verbosity": "error",
+        "enable_openapi": false,
+        "jwt_secret_key": "",
+        "ws_token": "",
+        "CORS_origins": [],
+        "username": "",
+        "password": ""
+    },
+    "bot_name": "ARIMA_5_DCA",
+    "initial_state": "running",
+    "force_entry_enable": false,
+    "internals": {
+        "process_throttle_secs": 5
+    }
+}

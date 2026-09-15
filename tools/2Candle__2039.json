@@ -1,0 +1,54 @@
+{
+    "strategy_name": "Candle2",
+    "params": {
+        "trailing": {
+            "trailing_stop": false,
+            "trailing_stop_positive": 0.025,
+            "trailing_stop_positive_offset": 0.1,
+            "trailing_only_offset_is_reached": false
+        },
+        "buy": {
+            "bull_4h_threshold": 70.0,
+            "bull_rsi_limit": 75.2,
+            "buy_threshold": 3.0,
+            "fast_rsi": 4,
+            "l_window_size": 40,
+            "rsi_threshold": 40.0,
+            "sr_length": 50,
+            "sr_shift": 50,
+            "u_window_size": 90,
+            "use_1": false,
+            "use_2": false,
+            "use_3": false,
+            "use_4": true,
+            "use_5": true,
+            "use_6": true,
+            "use_7": true
+        },
+        "sell": {
+            "bear_rsi_threshold": 70.0,
+            "block_exit": false,
+            "sell_threshold": 3.0,
+            "use_11": false,
+            "use_12": false,
+            "use_13": false,
+            "use_tsl1": true,
+            "use_tsl2": true
+        },
+        "protection": {},
+        "roi": {
+            "0": 1.065,
+            "480": 0.377,
+            "1200": 0.137,
+            "1320": 0
+        },
+        "stoploss": {
+            "stoploss": -0.15
+        },
+        "max_open_trades": {
+            "max_open_trades": 3
+        }
+    },
+    "ft_stratparam_v": 1,
+    "export_time": "2025-07-22 02:55:05.025738+00:00"
+}

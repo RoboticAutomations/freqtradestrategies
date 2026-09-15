@@ -1,0 +1,27 @@
+{
+    "rustc": 17273738520181233363,
+    "features": "[\"simd\"]",
+    "declared_features": "[\"__internal_use_only_features_that_work_on_stable\", \"alloc\", \"derive\", \"float-nightly\", \"simd\", \"simd-nightly\", \"std\", \"zerocopy-derive\"]",
+    "target": 3084901215544504908,
+    "profile": 2241668132362809309,
+    "path": 18402957973936450207,
+    "deps": [
+        [
+            3627134287615604440,
+            "build_script_build",
+            false,
+            6432902764367898856
+        ]
+    ],
+    "local": [
+        {
+            "CheckDepInfo": {
+                "dep_info": "debug\\.fingerprint\\zerocopy-bf00cd3219d289fb\\dep-lib-zerocopy",
+                "checksum": false
+            }
+        }
+    ],
+    "rustflags": [],
+    "config": 2069994364910194474,
+    "compile_kind": 0
+}

@@ -1,0 +1,45 @@
+{
+    "rustc": 17273738520181233363,
+    "features": "[]",
+    "declared_features": "[\"atomic-polyfill\", \"compile-time-rng\", \"const-random\", \"default\", \"getrandom\", \"nightly-arm-aes\", \"no-rng\", \"runtime-rng\", \"serde\", \"std\"]",
+    "target": 8470944000320059508,
+    "profile": 2241668132362809309,
+    "path": 6071214914179124083,
+    "deps": [
+        [
+            966925859616469517,
+            "build_script_build",
+            false,
+            2646644722112936215
+        ],
+        [
+            3627134287615604440,
+            "zerocopy",
+            false,
+            7524165018584881960
+        ],
+        [
+            3722963349756955755,
+            "once_cell",
+            false,
+            6252204427429830344
+        ],
+        [
+            7667230146095136825,
+            "cfg_if",
+            false,
+            4420866040507071626
+        ]
+    ],
+    "local": [
+        {
+            "CheckDepInfo": {
+                "dep_info": "debug\\.fingerprint\\ahash-75f78ad51018cd35\\dep-lib-ahash",
+                "checksum": false
+            }
+        }
+    ],
+    "rustflags": [],
+    "config": 2069994364910194474,
+    "compile_kind": 0
+}

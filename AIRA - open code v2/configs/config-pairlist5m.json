@@ -1,0 +1,182 @@
+{
+    "position_adjustment_enable": true,
+    "max_open_trades": 20,
+    "stake_currency": "USDT",
+    "stake_amount": 25,
+    "tradable_balance_ratio": 1,
+    "dry_run_wallet": 800,
+    "fiat_display_currency": "USD",
+    "enable_dp": true,
+    "timeframe": "5m",
+    "informative_timeframes": {
+        "1h": [
+            "close"
+        ]
+    },
+    "leverage": {
+        "enabled": true,
+        "max_leverage": 10
+    },
+    "trading_mode": "futures",
+    "margin_mode": "isolated",
+    "stoploss_on_exchange": false,
+    "dry_run": true,
+    "cancel_open_orders_on_exit": false,
+    "unfilledtimeout": {
+        "unit": "minutes",
+        "entry": 10,
+        "exit": 30
+    },
+    "order_types": {
+        "entry": "market",
+        "exit": "market",
+        "emergency_exit": "market",
+        "force_entry": "market",
+        "force_exit": "market",
+        "stoploss": "market",
+        "stoploss_on_exchange": false,
+        "stoploss_on_exchange_interval": 60,
+        "stoploss_on_exchange_limit_ratio": 0.99
+    },
+    "entry_pricing": {
+        "price_side": "other",
+        "ask_last_balance": 0,
+        "use_order_book": true,
+        "order_book_top": 1,
+        "check_depth_of_market": {
+            "enabled": false,
+            "bids_to_ask_delta": 1
+        }
+    },
+    "exit_pricing": {
+        "price_side": "other",
+        "use_order_book": true,
+        "order_book_top": 1
+    },
+    "exchange": {
+        "name": "bybit",
+        "key": "VucO06Hapzn8yzetgl",
+        "secret": "REDACTED-BY-REPO-HYGIENE",
+        "ccxt_config": {},
+        "ccxt_async_config": {
+            "aiohttp_trust_env": true,
+            "enableRateLimit": true,
+            "rateLimit": 150
+        },
+        "pair_whitelist": [],
+        "pair_blacklist": [
+            "BNB/.*",
+            ".*/BNB",
+            ".*BEAR/.*",
+            ".*BULL/.*",
+            ".*UP/.*",
+            ".*DOWN/.*",
+            ".*_PREMIUM",
+            "BUSD/.*",
+            ".*BVOL/.*",
+            ".*IBVOL/.*"
+        ]
+    },
+    "pairlists": [
+        {
+            "method": "VolumePairList",
+            "number_assets": 150,
+            "sort_key": "quoteVolume",
+            "min_value": 0,
+            "refresh_period": 86400
+        },
+        {
+            "method": "AgeFilter",
+            "min_days_listed": 60
+        },
+        {
+            "method": "PriceFilter",
+            "low_price_ratio": 0.002,
+            "min_price": 1e-05,
+            "max_price": 50000
+        },
+        {
+            "method": "SpreadFilter",
+            "max_spread_ratio": 0.003
+        },
+        {
+            "method": "VolatilityFilter",
+            "lookback_days": 10,
+            "min_volatility": 0.02,
+            "max_volatility": 0.35,
+            "refresh_period": 86400
+        },
+        {
+            "method": "ShuffleFilter",
+            "seed": 42
+        }
+    ],
+    "edge": {
+        "enabled": false,
+        "process_throttle_secs": 3600,
+        "calculate_since_number_of_days": 7,
+        "allowed_risk": 0.01,
+        "minimum_winrate": 0.6,
+        "minimum_expectancy": 0.2,
+        "min_trade_number": 10,
+        "max_trade_duration_minute": 1440,
+        "remove_pumps": false
+    },
+    "telegram": {
+        "enabled": true,
+        "token": "REDACTED-BY-REPO-HYGIENE",
+        "chat_id": "REDACTED-BY-REPO-HYGIENE",
+        "keyboard": [
+            [
+                "/profit",
+                "/trades",
+                "/status",
+                "/status table"
+            ],
+            [
+                "/daily",
+                "/logs",
+                "/show_config",
+                "/whitelist"
+            ],
+            [
+                "/help",
+                "/start",
+                "/stop",
+                "/performance"
+            ]
+        ]
+    },
+    "api_server": {
+        "enabled": true,
+        "listen_ip_address": "0.0.0.0",
+        "listen_port": 9010,
+        "verbosity": "error",
+        "enable_openapi": false,
+        "jwt_secret_key": "REDACTED-BY-REPO-HYGIENE",
+        "ws_token": "REDACTED-BY-REPO-HYGIENE",
+        "CORS_origins": [
+            "http://194.182.175.26:8080"
+        ],
+        "username": "REDACTED-BY-REPO-HYGIENE",
+        "password": "REDACTED-BY-REPO-HYGIENE"
+    },
+    "bot_name": "freqtrade",
+    "initial_state": "running",
+    "force_entry_enable": false,
+    "internals": {
+        "process_throttle_secs": 5
+    },
+    "pairlocks": {
+        "enabled": false
+    },
+    "logging": {
+        "level": "info",
+        "logfile": "freqtrade.log",
+        "format": "[%(asctime)s] %(name)s - %(levelname)s - %(message)s"
+    },
+    "coingecko": {
+        "api_key": "REDACTED-BY-REPO-HYGIENE",
+        "is_demo": true
+    }
+}

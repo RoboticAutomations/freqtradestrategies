@@ -1,0 +1,62 @@
+{
+    "strategy_name": "ttV8dca",
+    "params": {
+        "stoploss": {
+            "stoploss": -0.25
+        },
+        "trailing": {
+            "trailing_stop": false,
+            "trailing_stop_positive": null,
+            "trailing_stop_positive_offset": 0.0,
+            "trailing_only_offset_is_reached": false
+        },
+        "max_open_trades": {
+            "max_open_trades": 3
+        },
+        "buy": {
+            "base_nb_candles_buy": 22,
+            "bull": -0.14,
+            "dca1": 0.03,
+            "dca2": 0.05,
+            "dca3": 0.06,
+            "ewo_high": 0,
+            "ewo_high_safe": 7,
+            "ewo_high_uL": 15,
+            "ewo_low": -5,
+            "low_offset": 0.99,
+            "max_epa": 3,
+            "rsi_buy": 55
+        },
+        "sell": {
+            "base_nb_candles_sell": 51,
+            "estop": -0.02,
+            "high_offset": 1.08,
+            "high_offset_2": 1.27,
+            "ts0": 0.008,
+            "ts1": 0.012,
+            "ts2": 0.018,
+            "ts3": 0.034,
+            "ts4": 0.049,
+            "ts5": 0.053,
+            "tsl_target0": 0.023,
+            "tsl_target1": 0.061,
+            "tsl_target2": 0.113,
+            "tsl_target3": 0.126,
+            "tsl_target4": 0.269,
+            "tsl_target5": 0.4
+        },
+        "protection": {
+            "cooldown_lookback": 29,
+            "stop_duration": 134,
+            "use_stop_protection": false
+        },
+        "roi": {
+            "0": 0.15100000000000002,
+            "24": 0.07200000000000001,
+            "66": 0.017,
+            "111": 0
+        }
+    },
+    "ft_stratparam_v": 1,
+    "export_time": "2024-01-08 06:25:42.123078+00:00"
+}

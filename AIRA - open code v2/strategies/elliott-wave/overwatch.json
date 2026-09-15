@@ -1,0 +1,58 @@
+{
+    "strategy_name": "overwatch",
+    "params": {
+        "trailing": {
+            "trailing_stop": true,
+            "trailing_stop_positive": 0.005,
+            "trailing_stop_positive_offset": 0.03,
+            "trailing_only_offset_is_reached": true
+        },
+        "max_open_trades": {
+            "max_open_trades": 6
+        },
+        "buy": {
+            "base_nb_candles_buy": 19,
+            "ewo_high": 5.775,
+            "ewo_low": -19.765,
+            "fast_1h": 6,
+            "low_offset": 0.903,
+            "rsi_buy": 44,
+            "slow_1h": 29
+        },
+        "sell": {
+            "base_nb_candles_sell": 58,
+            "high_offset": 1.098
+        },
+        "protection": {
+            "cooldown_lookback": 36,
+            "lowprofit_only_per_pair": true,
+            "lowprofit_protection_lookback": 5,
+            "lowprofit_required_profit": -0.234,
+            "lowprofit_stop_duration": 71,
+            "lowprofit_trade_limit": 5,
+            "maxdrawdown_allowed_drawdown": 0.032,
+            "maxdrawdown_protection_lookback": 3,
+            "maxdrawdown_stop_duration": 9,
+            "maxdrawdown_trade_limit": 13,
+            "stop_duration": 182,
+            "stop_protection_only_per_pair": true,
+            "stop_protection_only_per_side": false,
+            "stop_protection_required_profit": 0.726,
+            "stop_protection_trade_limit": 6,
+            "use_lowprofit_protection": false,
+            "use_maxdrawdown_protection": true,
+            "use_stop_protection": false
+        },
+        "roi": {
+            "0": 0.354,
+            "320": 0.17800000000000002,
+            "501": 0.04,
+            "1841": 0
+        },
+        "stoploss": {
+            "stoploss": -0.311
+        }
+    },
+    "ft_stratparam_v": 1,
+    "export_time": "2023-03-27 00:08:58.636839+00:00"
+}

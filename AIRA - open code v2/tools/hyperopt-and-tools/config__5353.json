@@ -1,0 +1,253 @@
+{
+    "$schema": "https://schema.freqtrade.io/schema.json",
+    "position_adjustment_enable": true,
+    "trading_mode": "futures",
+    "margin_mode": "isolated",
+    "max_open_trades": 12,
+    "timeframe": "15m",
+    "stake_currency": "USDT",
+    "stake_amount": "unlimited",
+    "tradable_balance_ratio": 0.99,
+    "fiat_display_currency": "USD",
+    "dry_run": true,
+    "dry_run_wallet": 15000,
+    "cancel_open_orders_on_exit": false,
+    "unfilledtimeout": {
+        "entry": 10,
+        "exit": 10
+    },
+    "entry_pricing": {
+        "price_side": "other",
+        "use_order_book": true,
+        "order_book_top": 1,
+        "price_last_balance": 0.0,
+        "check_depth_of_market": {
+            "enabled": false,
+            "bids_to_ask_delta": 1
+        }
+    },
+    "exit_pricing": {
+        "price_side": "other",
+        "use_order_book": true,
+        "order_book_top": 1
+    },
+    "exchange": {
+        "name": "bybit",
+        "key": "",
+        "secret": "",
+        "ccxt_config": {},
+        "ccxt_async_config": {
+            "enableRateLimit": true
+        },
+        "pair_whitelist": [
+            "BTC/USDT:USDT"
+        ],
+        "pair_blacklist": []
+    },
+    "pairlists": [
+        {
+            "method": "StaticPairList",
+            "number_assets": 51,
+            "sort_key": "quoteVolume",
+            "min_value": 0,
+            "refresh_period": 1800
+        }
+    ],
+    "freqai": {
+        "enabled": true,
+        "add_state_info": true,
+        "conv_width": 20,
+        "purge_old_models": 5,
+        "expiration_hours": 999,
+        "train_period_days": 120,
+        "live_retrain_hours": 249,
+        "backtest_period_days": 14,
+        "write_metrics_to_disk": true,
+        "identifier": "FQF_RNN_LSTM_Trader_OEMTEST",
+        "fit_live_predictions_candles": 500,
+        "data_kitchen_thread_count": 24,
+        "track_performance": true,
+        "save_backtest_models": false,
+        "activate_tensorboard": true,
+        "wait_for_training_iteration_on_reload": true,
+        "continual_learning": false,
+        "override_exchange_check": false,
+        "feature_parameters": {
+            "include_corr_pairlist": [],
+            "include_timeframes": [
+                "15m",
+                "1h",
+                "4h"
+            ],
+            "label_period_candles": 30,
+            "indicator_periods_candles": [
+                8,
+                32,
+                64
+            ],
+            "include_shifted_candles": 0,
+            "inlier_metric_window": 20,
+            "noise_standard_deviation": 0.01,
+            "reverse_test_train_order": false,
+            "feature_importance_window_days": 14,
+            "buffer_train_data_candles": 200
+        },
+        "data_split_parameters": {
+            "test_size": 0.2,
+            "random_state": 42,
+            "shuffle": false
+        },
+        "model_training_parameters": {
+            "device": "auto",
+            "seed": 42,
+            "n_jobs": 32,
+            "learning_rate": 0.0001,
+            "fraction_lr": 0.0001,
+            "lr_anneal": true,
+            "lr_schedule": "cosine",
+            "lr_min": 1e-05,
+            "optimizer_step_size": 1000,
+            "optimizer_gamma": 0.9,
+            "adam_epsilon": 1e-05,
+            "clip_grad_norm": 1.0,
+            "gamma": 0.99,
+            "nstep_train": 20,
+            "nstep_target": 20,
+            "num_quantiles": 32,
+            "embedding_dim": 64,
+            "hidden_dim": 128,
+            "num_cosines": 64,
+            "lambda_w1": 3.0,
+            "lambda_entropy": 0.002,
+            "rnn_bootstrap": true,
+            "batch_size": 128,
+            "buffer_size": 2000000,
+            "burn_in_length": 10,
+            "learn_length": 10,
+            "replay_updates_per_step": 2,
+            "vf_scale_epsilon": null,
+            "action_masking": true,
+            "epsilon": 0.4,
+            "epsilon_min": 0.01,
+            "epsilon_decay": 0.995,
+            "epsilon_schedule": "linear",
+            "epsilon_start": 0.2,
+            "epsilon_end": 0.01,
+            "epsilon_warmup_steps": 0,
+            "epsilon_decay_steps": 40000,
+            "target_update_freq": 1000,
+            "target_update_mode": "soft",
+            "target_update_per": "env_step",
+            "target_soft_tau": 0.005,
+            "seq_length": 20,
+            "n_envs": 32,
+            "use_amp": false,
+            "compile_model": false,
+            "value_rescaling": true,
+            "cvar_alpha": 0.1,
+            "risk_selection_beta": 0.5
+        },
+        "rl_config": {
+            "model_type": "FQF",
+            "custom_model_types": [
+                "FQF"
+            ],
+            "policy_type": "MlpPolicy",
+            "cpu_count": 1,
+            "drop_ohlc_from_features": true,
+            "train_cycles": 40,
+            "n_envs": 32,
+            "check_envs": false,
+            "vec_env_type": "dummy",
+            "add_state_info": true,
+            "max_training_drawdown_pct": 0.8,
+            "randomize_starting_position": true,
+            "epsilon_start": 0.2,
+            "epsilon_end": 0.01,
+            "epsilon_schedule": "linear",
+            "epsilon_warmup_steps": 0,
+            "epsilon_decay_steps": 100000,
+            "frame_limit": null,
+            "history_maxlen": 10000,
+            "tensorboard_plot": true,
+            "tensorboard_log_interval": 100,
+            "plot_new_best": true,
+            "strict_normalization": false,
+            "normalization_tolerance": 1e-06,
+            "clip_rewards": true,
+            "invalid_action_penalty": -2.0,
+            "model_reward_parameters": {
+                "rr": 1,
+                "profit_aim": 0.03
+            },
+            "reward_params": {
+                "R_clip": 550.0,
+                "pnl_reward_factor": 100.0,
+                "transaction_cost": 0.15,
+                "efficiency_weight": 0.5,
+                "pbrs_enabled": true,
+                "base_factor": 100.0,
+                "max_trade_duration_candles": 192,
+                "max_idle_duration_candles": 384,
+                "potential_gamma": 0.99,
+                "hold_potential_enabled": true,
+                "hold_potential_ratio": 0.01,
+                "hold_potential_gain": 3.0,
+                "idle_penalty_ratio": 0.1,
+                "idle_penalty_power": 1.0,
+                "hold_penalty_ratio": 0.25,
+                "hold_penalty_power": 1.0,
+                "exit_attenuation_mode": "sqrt",
+                "exit_plateau": true,
+                "exit_plateau_grace": 1.0,
+                "win_reward_factor": 3.0,
+                "pnl_amplification_sensitivity": 2.0,
+                "time_penalty_base": 0.0001,
+                "losing_time_multiplier": 4.0,
+                "neutral_action_penalty": 0.2,
+                "neutral_outside_penalty": 0.0,
+                "exit_profit_threshold_factor": 1.5,
+                "exit_bonus_multiplier": 1.5,
+                "entry_reward_base": 0.0
+            }
+        }
+    },
+    "telegram": {
+        "enabled": true,
+        "token": "",
+        "chat_id": ""
+    },
+    "bot_name": "robo-trader",
+    "force_entry_enable": true,
+    "initial_state": "running",
+    "internals": {
+        "process_throttle_secs": 5,
+        "heartbeat_interval": 60
+    },
+    "disable_dataframe_checks": false,
+    "recursive_strategy_search": false,
+    "order_types": {
+        "entry": "market",
+        "exit": "market",
+        "stoploss": "market",
+        "emergency_exit": "market",
+        "force_entry": "market",
+        "force_exit": "market",
+        "stoploss_on_exchange": false
+    },
+    "order_time_in_force": {
+        "entry": "ioc",
+        "exit": "ioc"
+    },
+    "api_server": {
+        "enabled": true,
+        "listen_ip_address": "127.0.0.2",
+        "listen_port": 8080,
+        "enable_openapi": true,
+        "jwt_secret_key": "REDACTED-BY-REPO-HYGIENE",
+        "CORS_origins": [],
+        "ws_token": "REDACTED-BY-REPO-HYGIENE",
+        "username": "REDACTED-BY-REPO-HYGIENE",
+        "password": "REDACTED-BY-REPO-HYGIENE"
+    }
+}

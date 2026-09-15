@@ -1,0 +1,139 @@
+{
+    "trading_mode": "futures",
+    "margin_mode": "isolated",
+    "max_open_trades": 6,
+    "stake_currency": "USDT",
+    "stake_amount": 200,
+    "tradable_balance_ratio": 1,
+    "fiat_display_currency": "USD",
+    "dry_run": true,
+    "timeframe": "15m",
+    "dry_run_wallet": 2000,
+    "cancel_open_orders_on_exit": true,
+    "unfilledtimeout": {
+        "entry": 10,
+        "exit": 30
+    },
+    "exchange": {
+        "name": "bybit",
+        "key": "",
+        "secret": "",
+        "ccxt_config": {},
+        "ccxt_async_config": {
+            "enableRateLimit": false,
+            "rateLimit": 200
+        },
+        "pair_whitelist": [
+            "BTC/USDT:USDT",
+            "ETH/USDT:USDT",
+            "POWER/USDT:USDT",
+            "VVV/USDT:USDT",
+            "WLFI/USDT:USDT",
+            "XRP/USDT:USDT",
+            "LTC/USDT:USDT",
+            "PUMPFUN/USDT:USDT",
+            "TRUMP/USDT:USDT"
+        ],
+        "pair_blacklist": []
+    },
+    "entry_pricing": {
+        "price_side": "same",
+        "use_order_book": true,
+        "order_book_top": 1,
+        "price_last_balance": 0.0,
+        "check_depth_of_market": {
+            "enabled": false,
+            "bids_to_ask_delta": 1
+        }
+    },
+    "exit_pricing": {
+        "price_side": "other",
+        "use_order_book": true,
+        "order_book_top": 1
+    },
+    "pairlists": [
+        {
+            "method": "StaticPairList"
+        }
+    ],
+    "freqai": {
+        "enabled": true,
+        "add_state_info": true,
+        "purge_old_models": 2,
+        "expiration_hours": 48,
+        "train_period_days": 32,
+        "backtest_period_days": 7,
+        "live_retrain_hours": 2,
+        "continual_learning": true,
+        "identifier": "gpttrader-v4",
+        "extra_returns_per_train": {
+            "expert_long_enter": 0,
+            "expert_long_exit": 0,
+            "expert_short_enter": 0,
+            "expert_short_exit": 0,
+            "expert_neutral": 0,
+            "expert_opinion": ""
+        },
+        "feature_parameters": {
+            "include_corr_pairlist": [],
+            "include_timeframes": [],
+            "indicator_periods_candles": [
+                8
+            ]
+        },
+        "GPTTrader": {
+            "target_profit": 0.03,
+            "target_duration": 1000,
+            "stop_loss": 0.25,
+            "llm_offline": true,
+            "llm_provider": "LLMStudio",
+            "llm_base_url": "http://192.168.8.202:1234",
+            "llm_model": "gpt-oss-20b",
+            "llm_trace": true,
+            "llm_trace_max_chars": 30000,
+            "max_tokens": 5000,
+            "top_p": 0.9,
+            "frequency_penalty": 0.0,
+            "presence_penalty": 0.0,
+            "seed": null,
+            "max_context_chars": 10000,
+            "max_retries": 3,
+            "retry_delay_s": 1.0,
+            "fallback_model": null,
+            "requests_per_minute": null,
+            "strict_json_parsing": true,
+            "response_timeout_s": 30.0,
+            "model_specific_params": {},
+            "use_structured_outputs": false
+        },
+        "data_split_parameters": {
+            "test_size": 0,
+            "random_state": 1,
+            "shuffle": false
+        },
+        "model_training_parameters": {}
+    },
+    "telegram": {
+        "enabled": false,
+        "token": "REDACTED-BY-REPO-HYGIENE",
+        "chat_id": "REDACTED-BY-REPO-HYGIENE"
+    },
+    "bot_name": "robo-trader",
+    "force_entry_enable": true,
+    "initial_state": "running",
+    "internals": {
+        "process_throttle_secs": 5
+    },
+    "api_server": {
+        "enabled": true,
+        "listen_ip_address": "127.0.0.1",
+        "listen_port": 8080,
+        "verbosity": "error",
+        "enable_openapi": false,
+        "jwt_secret_key": "REDACTED-BY-REPO-HYGIENE",
+        "CORS_origins": [],
+        "ws_token": "REDACTED-BY-REPO-HYGIENE",
+        "username": "REDACTED-BY-REPO-HYGIENE",
+        "password": "REDACTED-BY-REPO-HYGIENE"
+    }
+}

@@ -1,0 +1,18 @@
+{
+    "symbols": [
+        "BTC/USDT",
+        "ETH/USDT",
+        "XRP/USDT",
+        "LTC/USDT",
+        "ADA/USDT"
+    ],
+    "settings": {
+        "depth": 100,
+        "cvd_reset_hours": null,
+        "max_history": 1000,
+        "candle_interval": 60,
+        "exchange_name": "bybit",
+        "enable_trades": true,
+        "refresh_interval": 1500
+    }
+}

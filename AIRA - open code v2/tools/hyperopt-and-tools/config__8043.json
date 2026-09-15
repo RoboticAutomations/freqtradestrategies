@@ -1,0 +1,39 @@
+{
+    "kucoin": {
+        "api_url": "https://api.kucoin.com",
+        "api_key_file": "kucoin.key",
+        "config": {
+            "enabletelegrambotcontrol": 1,
+            "base_currency": "DOGE",
+            "quote_currency": "USDT",
+            "live": 0,
+            "sellatloss": 0,
+            "sellatresistance": 0,
+            "trailingstoploss": -3,
+            "trailingstoplosstrigger": 6,
+            "nosellmaxpcnt": 1.5,
+            "nosellminpcnt": -6,
+            "disablebullonly": 1,
+            "disablebuynearhigh": 0,
+            "disablebuymacd": 0,
+            "disablebuyobv": 1,
+            "disablebuyelderray": 1,
+            "disablefailsafefibonaccilow": 0,
+            "disableprofitbankreversal": 0,
+            "disabletracker": 1,
+            "disabletelegram": 1,
+            "enableml": 0,
+            "autorestart": 1,
+            "graphs": 0,
+            "verbose": 0,
+            "stats": 0
+        }
+    },
+    "logger": {
+        "filelog": 0,
+        "logfile": "pycryptobot.log",
+        "fileloglevel": "DEBUG",
+        "consolelog": 1,
+        "consoleloglevel": "INFO"
+    }
+}

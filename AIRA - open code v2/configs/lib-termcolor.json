@@ -1,0 +1,27 @@
+{
+    "rustc": 17273738520181233363,
+    "features": "[]",
+    "declared_features": "[]",
+    "target": 386963995487357571,
+    "profile": 2241668132362809309,
+    "path": 5566750067408173564,
+    "deps": [
+        [
+            5785418864289862565,
+            "winapi_util",
+            false,
+            10459402308093643359
+        ]
+    ],
+    "local": [
+        {
+            "CheckDepInfo": {
+                "dep_info": "debug\\.fingerprint\\termcolor-7f041fb9da4dc17f\\dep-lib-termcolor",
+                "checksum": false
+            }
+        }
+    ],
+    "rustflags": [],
+    "config": 2069994364910194474,
+    "compile_kind": 0
+}

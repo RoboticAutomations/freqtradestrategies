@@ -1,0 +1,135 @@
+{
+    "trading_mode": "futures",
+    "new_pairs_days": 30,
+    "liquidation_buffer": 0.0,
+    "margin_mode": "isolated",
+    "max_open_trades": 10,
+    "stake_currency": "USDT",
+    "stake_amount": 100,
+    "tradable_balance_ratio": 1,
+    "fiat_display_currency": "USD",
+    "dry_run": true,
+    "timeframe": "15m",
+    "dataformat_ohlcv": "json",
+    "dry_run_wallet": 1000,
+    "cancel_open_orders_on_exit": true,
+    "unfilledtimeout": {
+        "entry": 1,
+        "exit": 1
+    },
+    "exchange": {
+        "name": "binance",
+        "key": "",
+        "secret": "",
+        "ccxt_config": {
+            "enableRateLimit": true,
+            "rateLimit": 50
+        },
+        "ccxt_async_config": {
+            "enableRateLimit": true,
+            "rateLimit": 50
+        },
+        "pair_whitelist": [
+            "BCH/USDT:USDT"
+        ],
+        "pair_blacklist": []
+    },
+    "entry_pricing": {
+        "price_side": "same",
+        "use_order_book": true,
+        "order_book_top": 1,
+        "price_last_balance": 0.0,
+        "check_depth_of_market": {
+            "enabled": false,
+            "bids_to_ask_delta": 1
+        }
+    },
+    "exit_pricing": {
+        "price_side": "other",
+        "use_order_book": true,
+        "order_book_top": 1
+    },
+    "pairlists": [
+        {
+            "method": "StaticPairList"
+        }
+    ],
+    "freqai": {
+        "enabled": true,
+        "conv_width": 1,
+        "purge_old_models": 2,
+        "expiration_hours": 24,
+        "train_period_days": 60,
+        "backtest_period_days": 2,
+        "live_retrain_hours": 0.25,
+        "write_metrics_to_disk": true,
+        "identifier": "quickadapter-xgboost2",
+        "fit_live_predictions_candles": 600,
+        "data_kitchen_thread_count": 2,
+        "track_performance": true,
+        "extra_returns_per_train": {
+            "DI_value_param1": 0,
+            "DI_value_param2": 0,
+            "DI_value_param3": 0,
+            "DI_cutoff": 2,
+            "&s-minima_sort_threshold": -2,
+            "&s-maxima_sort_threshold": 2
+        },
+        "feature_parameters": {
+            "include_corr_pairlist": [
+                "BTC/USDT:USDT",
+                "ETH/USDT:USDT"
+            ],
+            "include_timeframes": [
+                "15m",
+                "1h",
+                "4h",
+                "12h"
+            ],
+            "label_period_candles": 100,
+            "include_shifted_candles": 3,
+            "DI_threshold": 10,
+            "weight_factor": 0.9,
+            "principal_component_analysis": false,
+            "use_SVM_to_remove_outliers": false,
+            "use_DBSCAN_to_remove_outliers": false,
+            "indicator_periods_candles": [
+                8,
+                16,
+                32
+            ],
+            "inlier_metric_window": 0,
+            "noise_standard_deviation": 0.02,
+            "reverse_test_train_order": false,
+            "plot_feature_importances": 0,
+            "buffer_train_data_candles": 100
+        },
+        "data_split_parameters": {
+            "test_size": 0,
+            "random_state": 1,
+            "shuffle": false
+        },
+        "model_training_parameters": {
+            "n_jobs": 2,
+            "verbosity": 1
+        }
+    },
+    "api_server": {
+        "enabled": true,
+        "listen_ip_address": "0.0.0.0",
+        "listen_port": 8080,
+        "verbosity": "error",
+        "enable_openapi": false,
+        "jwt_secret_key": "",
+        "ws_token": "",
+        "CORS_origins": [],
+        "username": "REDACTED-BY-REPO-HYGIENE",
+        "password": "REDACTED-BY-REPO-HYGIENE"
+    },
+    "bot_name": "freqtrade2",
+    "initial_state": "running",
+    "force_entry_enable": true,
+    "internals": {
+        "process_throttle_secs": 5
+    }
+}

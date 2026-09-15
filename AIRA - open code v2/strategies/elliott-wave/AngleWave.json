@@ -1,0 +1,51 @@
+{
+    "strategy_name": "AngleWave",
+    "params": {
+        "roi": {
+            "0": 0.202,
+            "141": 0.094,
+            "380": 0.017,
+            "1459": 0
+        },
+        "stoploss": {
+            "stoploss": -0.281
+        },
+        "trailing": {
+            "trailing_stop": true,
+            "trailing_stop_positive": 0.011,
+            "trailing_stop_positive_offset": 0.019999999999999997,
+            "trailing_only_offset_is_reached": true
+        },
+        "buy": {
+            "base_nb_candles_buy": 45,
+            "ewo_bear_x": 1.69,
+            "ewo_bull_x": 1.127,
+            "ewo_high_x": 1.33,
+            "ewo_lo_limit": -1.4,
+            "fast_ewo": 6,
+            "low_offset": 0.98,
+            "rsi_buy_high": 61,
+            "rsi_buy_low": 38,
+            "slow_ewo": 99
+        },
+        "sell": {
+            "base_nb_candles_sell": 37,
+            "high_offset": 1.01,
+            "ts0": 0.009,
+            "ts1": 0.014,
+            "ts2": 0.021,
+            "ts3": 0.035,
+            "ts4": 0.03,
+            "ts5": 0.04,
+            "tsl_target0": 0.024,
+            "tsl_target1": 0.045,
+            "tsl_target2": 0.08,
+            "tsl_target3": 0.11,
+            "tsl_target4": 0.16,
+            "tsl_target5": 0.2
+        },
+        "protection": {}
+    },
+    "ft_stratparam_v": 1,
+    "export_time": "2023-05-10 21:08:02.357025+00:00"
+}

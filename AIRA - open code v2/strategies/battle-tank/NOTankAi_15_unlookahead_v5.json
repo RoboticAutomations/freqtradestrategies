@@ -1,0 +1,41 @@
+{
+    "strategy_name": "NOTankAi_15_unlookahead_v5",
+    "params": {
+        "max_open_trades": {
+            "max_open_trades": 5
+        },
+        "buy": {
+            "dca_delay_minutes": 53,
+            "ema_long_period": 21,
+            "ema_short_period": 14,
+            "rsi_buy_threshold": 31,
+            "rsi_sell_threshold": 74,
+            "safety_order_volume_scale": 1.996,
+            "volume_multiplier": 1.536,
+            "volume_period": 10
+        },
+        "sell": {},
+        "protection": {
+            "cooldown_lookback": 22,
+            "stop_duration": 90,
+            "use_stop_protection": false
+        },
+        "roi": {
+            "0": 0.2,
+            "87": 0.136,
+            "127": 0.041,
+            "390": 0
+        },
+        "stoploss": {
+            "stoploss": -0.329
+        },
+        "trailing": {
+            "trailing_stop": true,
+            "trailing_stop_positive": 0.102,
+            "trailing_stop_positive_offset": 0.163,
+            "trailing_only_offset_is_reached": true
+        }
+    },
+    "ft_stratparam_v": 1,
+    "export_time": "2025-06-13 15:01:18.297410+00:00"
+}

@@ -1,0 +1,51 @@
+{
+    "strategy_name": "EI4_t4c0s_V2",
+    "params": {
+        "roi": {
+            "0": 0.229,
+            "33": 0.052,
+            "57": 0.038,
+            "133": 0
+        },
+        "stoploss": {
+            "stoploss": -0.278
+        },
+        "trailing": {
+            "trailing_stop": false,
+            "trailing_stop_positive": null,
+            "trailing_stop_positive_offset": 0.0,
+            "trailing_only_offset_is_reached": false
+        },
+        "buy": {
+            "base_nb_candles_buy": 12,
+            "buy_adx": 20,
+            "buy_ema_cofi": 0.98,
+            "buy_ewo_high": 4.179,
+            "buy_fastd": 20,
+            "buy_fastk": 22,
+            "increment": 1.0008,
+            "lambo2_ema_14_factor": 0.99,
+            "lambo2_rsi_14_limit": 44,
+            "lambo2_rsi_4_limit": 43,
+            "low_offset": 0.985,
+            "mml": 318,
+            "mms": 11,
+            "move": 58,
+            "rsi_buy": 35
+        },
+        "sell": {
+            "base_nb_candles_sell": 22,
+            "high_offset": 1.008,
+            "high_offset_2": 1.018,
+            "sl1": -0.009,
+            "unclog": 0.02,
+            "unclog_days": 4
+        },
+        "protection": {},
+        "max_open_trades": {
+            "max_open_trades": 10
+        }
+    },
+    "ft_stratparam_v": 1,
+    "export_time": "2024-12-19 16:22:37.762874+00:00"
+}

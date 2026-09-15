@@ -1,0 +1,248 @@
+{
+    "position_adjustment_enable": true,
+    "max_open_trades": 20,
+    "stake_currency": "USDT",
+    "stake_amount": 25,
+    "tradable_balance_ratio": 1,
+    "dry_run_wallet": 800,
+    "fiat_display_currency": "USD",
+    "enable_dp": true,
+    "timeframe": "15m",
+    "informative_timeframes": {
+        "1h": [
+            "close"
+        ]
+    },
+    "leverage": {
+        "enabled": true,
+        "max_leverage": 10
+    },
+    "trading_mode": "futures",
+    "margin_mode": "isolated",
+    "stoploss_on_exchange": false,
+    "dry_run": true,
+    "cancel_open_orders_on_exit": false,
+    "unfilledtimeout": {
+        "unit": "minutes",
+        "entry": 10,
+        "exit": 30
+    },
+    "order_types": {
+        "entry": "market",
+        "exit": "market",
+        "emergency_exit": "market",
+        "force_entry": "market",
+        "force_exit": "market",
+        "stoploss": "market",
+        "stoploss_on_exchange": false,
+        "stoploss_on_exchange_interval": 60,
+        "stoploss_on_exchange_limit_ratio": 0.99
+    },
+    "entry_pricing": {
+        "price_side": "other",
+        "ask_last_balance": 0,
+        "use_order_book": true,
+        "order_book_top": 1,
+        "check_depth_of_market": {
+            "enabled": false,
+            "bids_to_ask_delta": 1
+        }
+    },
+    "exit_pricing": {
+        "price_side": "other",
+        "use_order_book": true,
+        "order_book_top": 1
+    },
+    "exchange": {
+        "name": "bybit",
+        "key": "VucO06Hapzn8yzetgl",
+        "secret": "REDACTED-BY-REPO-HYGIENE",
+        "ccxt_config": {},
+        "ccxt_async_config": {
+            "aiohttp_trust_env": true,
+            "enableRateLimit": true,
+            "rateLimit": 150
+        },
+        "pair_whitelist": [
+            "BTC/USDT:USDT",
+            "ETH/USDT:USDT",
+            "SOL/USDT:USDT",
+            "BNB/USDT:USDT",
+            "XRP/USDT:USDT",
+            "ADA/USDT:USDT",
+            "AVAX/USDT:USDT",
+            "DOT/USDT:USDT",
+            "MATIC/USDT:USDT",
+            "LINK/USDT:USDT",
+            "ATOM/USDT:USDT",
+            "UNI/USDT:USDT",
+            "LTC/USDT:USDT",
+            "NEAR/USDT:USDT",
+            "APT/USDT:USDT",
+            "ARB/USDT:USDT",
+            "OP/USDT:USDT",
+            "INJ/USDT:USDT",
+            "TIA/USDT:USDT",
+            "SUI/USDT:USDT",
+            "SEI/USDT:USDT",
+            "FIL/USDT:USDT",
+            "ICP/USDT:USDT",
+            "DOGE/USDT:USDT",
+            "SHIB/USDT:USDT",
+            "PEPE/USDT:USDT",
+            "AR/USDT:USDT",
+            "AAVE/USDT:USDT",
+            "MKR/USDT:USDT",
+            "CRV/USDT:USDT",
+            "LDO/USDT:USDT",
+            "GRT/USDT:USDT",
+            "SAND/USDT:USDT",
+            "MANA/USDT:USDT",
+            "AXS/USDT:USDT",
+            "RUNE/USDT:USDT",
+            "FTM/USDT:USDT",
+            "ALGO/USDT:USDT",
+            "VET/USDT:USDT",
+            "HBAR/USDT:USDT",
+            "ETC/USDT:USDT",
+            "XLM/USDT:USDT",
+            "TRX/USDT:USDT",
+            "BCH/USDT:USDT",
+            "EOS/USDT:USDT",
+            "THETA/USDT:USDT",
+            "XTZ/USDT:USDT"
+        ],
+        "pair_blacklist": []
+    },
+    "pairlists": [
+        {
+            "method": "StaticPairList"
+        }
+    ],
+    "edge": {
+        "enabled": false,
+        "process_throttle_secs": 3600,
+        "calculate_since_number_of_days": 7,
+        "allowed_risk": 0.01,
+        "minimum_winrate": 0.6,
+        "minimum_expectancy": 0.2,
+        "min_trade_number": 10,
+        "max_trade_duration_minute": 1440,
+        "remove_pumps": false
+    },
+    "freqai": {
+        "enabled": false,
+        "purge_old_models": 2,
+        "expiration_hours": 2,
+        "train_period_days": 7,
+        "backtest_period_days": 2,
+        "live_retrain_hours": 0.5,
+        "identifier": "gpttrader-v4",
+        "extra_returns_per_train": {
+            "sentiment_yes": 0,
+            "sentiment_no": 0,
+            "sentiment_unknown": 0,
+            "expert_long_enter": 0,
+            "expert_long_exit": 0,
+            "expert_short_enter": 0,
+            "expert_short_exit": 0,
+            "expert_neutral": 0,
+            "expert_opinion": ""
+        },
+        "feature_parameters": {
+            "include_corr_pairlist": [],
+            "include_timeframes": [],
+            "indicator_periods_candles": [
+                8
+            ]
+        },
+        "GPTTrader": {
+            "target_profit": 0.03,
+            "target_duration": 1000,
+            "stop_loss": 0.25,
+            "llm_offline": true,
+            "llm_provider": "LLMStudio",
+            "llm_base_url": "http://192.168.8.202:1234",
+            "llm_model": "gpt-oss-20b",
+            "llm_trace": true,
+            "llm_trace_max_chars": 30000,
+            "max_tokens": 1000,
+            "top_p": 0.9,
+            "frequency_penalty": 0.0,
+            "presence_penalty": 0.0,
+            "seed": null,
+            "max_context_chars": 10000,
+            "max_retries": 3,
+            "retry_delay_s": 1.0,
+            "fallback_model": null,
+            "requests_per_minute": null,
+            "strict_json_parsing": true,
+            "response_timeout_s": 30.0,
+            "model_specific_params": {},
+            "use_structured_outputs": false
+        },
+        "data_split_parameters": {
+            "test_size": 0,
+            "random_state": 1,
+            "shuffle": false
+        },
+        "model_training_parameters": {}
+    },
+    "telegram": {
+        "enabled": true,
+        "token": "REDACTED-BY-REPO-HYGIENE",
+        "chat_id": "REDACTED-BY-REPO-HYGIENE",
+        "keyboard": [
+            [
+                "/profit",
+                "/trades",
+                "/status",
+                "/status table"
+            ],
+            [
+                "/daily",
+                "/logs",
+                "/show_config",
+                "/whitelist"
+            ],
+            [
+                "/help",
+                "/start",
+                "/stop",
+                "/performance"
+            ]
+        ]
+    },
+    "api_server": {
+        "enabled": true,
+        "listen_ip_address": "0.0.0.0",
+        "listen_port": 9010,
+        "verbosity": "error",
+        "enable_openapi": false,
+        "jwt_secret_key": "REDACTED-BY-REPO-HYGIENE",
+        "ws_token": "REDACTED-BY-REPO-HYGIENE",
+        "CORS_origins": [
+            "http://194.182.175.26:8080"
+        ],
+        "username": "REDACTED-BY-REPO-HYGIENE",
+        "password": "REDACTED-BY-REPO-HYGIENE"
+    },
+    "bot_name": "freqtrade",
+    "initial_state": "running",
+    "force_entry_enable": false,
+    "internals": {
+        "process_throttle_secs": 5
+    },
+    "pairlocks": {
+        "enabled": false
+    },
+    "logging": {
+        "level": "info",
+        "logfile": "freqtrade.log",
+        "format": "[%(asctime)s] %(name)s - %(levelname)s - %(message)s"
+    },
+    "coingecko": {
+        "api_key": "REDACTED-BY-REPO-HYGIENE",
+        "is_demo": true
+    }
+}

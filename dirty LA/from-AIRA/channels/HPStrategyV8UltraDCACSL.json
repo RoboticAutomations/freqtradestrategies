@@ -1,0 +1,44 @@
+{
+    "strategy_name": "HPStrategyV8UltraDCACSL",
+    "params": {
+        "roi": {
+            "0": 0.045
+        },
+        "trailing": {
+            "trailing_stop": true,
+            "trailing_stop_positive": 0.018000000000000002,
+            "trailing_stop_positive_offset": 0.045,
+            "trailing_only_offset_is_reached": true
+        },
+        "max_open_trades": {
+            "max_open_trades": 10
+        },
+        "buy": {
+            "candle_time_threshold": 0.36,
+            "cci_treshold": -100,
+            "donchian_period": 23,
+            "max_tradable_ratio": 0.75,
+            "max_trades": 10,
+            "pct3_buy_threshold": -0.01,
+            "red_candles_before_buy": 1,
+            "rsi_treshold": 35,
+            "dca_limit": 2,
+            "dca_multiplier": 4.07,
+            "dca_threshold_pct": 0.1,
+            "dca_threshold_pct_k": 0.93,
+            "price_change_1": 0.034,
+            "price_change_2": 0.086
+        },
+        "sell": {
+            "custom_tp_pct": 0.005,
+            "kick_off_threshold": -0.32,
+            "trade_timeout": 12
+        },
+        "protection": {},
+        "stoploss": {
+            "stoploss": -0.279
+        }
+    },
+    "ft_stratparam_v": 1,
+    "export_time": "2025-02-15 20:03:57.534826+00:00"
+}

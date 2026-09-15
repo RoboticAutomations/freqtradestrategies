@@ -1,0 +1,35 @@
+{
+    "strategy_name": "KC_NOBB",
+    "params": {
+        "roi": {
+            "0": 0.6,
+            "4320": 0
+        },
+        "stoploss": {
+            "stoploss": -0.6
+        },
+        "trailing": {
+            "trailing_stop": false,
+            "trailing_stop_positive": 0.01,
+            "trailing_stop_positive_offset": 0.013,
+            "trailing_only_offset_is_reached": true
+        },
+        "max_open_trades": {
+            "max_open_trades": 1
+        },
+        "buy": {
+            "abs_long": 1.0,
+            "abs_long_12h": 3.0,
+            "linear_2h": 5
+        },
+        "sell": {
+            "abs_short": 2.4,
+            "abs_short_12h": 4.1,
+            "dm": 23,
+            "linear_12h": 17
+        },
+        "protection": {}
+    },
+    "ft_stratparam_v": 1,
+    "export_time": "2024-10-21 02:26:45.920165+00:00"
+}

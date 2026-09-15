@@ -1,0 +1,57 @@
+{
+    "strategy_name": "Tank5HurstDCAV1",
+    "params": {
+        "max_open_trades": {
+            "max_open_trades": 10
+        },
+        "buy": {
+            "filldelay": 285,
+            "ha_len": 67,
+            "ha_len2": 65,
+            "increment": 1.0012,
+            "max_dca_multiplier": 1.1,
+            "max_epa": 2,
+            "osc_len": 11,
+            "safety_order_reserve": 3,
+            "use0": false,
+            "use1": true,
+            "use2": false,
+            "use3": false,
+            "use4": false,
+            "use5": true,
+            "use6": true,
+            "use7": false,
+            "window_size": 417
+        },
+        "sell": {
+            "use10": true,
+            "use11": true,
+            "use12": true,
+            "use13": false,
+            "use8": false,
+            "use9": false
+        },
+        "protection": {
+            "cooldown_lookback": 29,
+            "stop_duration": 41,
+            "use_stop_protection": false
+        },
+        "roi": {
+            "0": 0.178,
+            "33": 0.036000000000000004,
+            "57": 0.017,
+            "160": 0
+        },
+        "stoploss": {
+            "stoploss": -0.027
+        },
+        "trailing": {
+            "trailing_stop": true,
+            "trailing_stop_positive": 0.176,
+            "trailing_stop_positive_offset": 0.181,
+            "trailing_only_offset_is_reached": false
+        }
+    },
+    "ft_stratparam_v": 1,
+    "export_time": "2024-08-26 13:42:05.797035+00:00"
+}

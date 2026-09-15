@@ -1,0 +1,58 @@
+{
+    "strategy_name": "PeekabooV2",
+    "params": {
+        "trailing": {
+            "trailing_stop": true,
+            "trailing_stop_positive": 0.197,
+            "trailing_stop_positive_offset": 0.198,
+            "trailing_only_offset_is_reached": false
+        },
+        "max_open_trades": {
+            "max_open_trades": 3
+        },
+        "buy": {
+            "base_nb_candles_buy": 77,
+            "bear": 499,
+            "blah": 216,
+            "bull": 70,
+            "dn": 0.987,
+            "enable1": true,
+            "enable2": false,
+            "enable3": true,
+            "enable4": false,
+            "enable5": true,
+            "enable6": true,
+            "increment": 1.0007,
+            "initial_safety_order_trigger": -0.02,
+            "max_safety_orders": 6,
+            "safety_order_step_scale": 1.24,
+            "safety_order_volume_scale": 1.4,
+            "up": 1.022
+        },
+        "sell": {
+            "days": 2,
+            "loss": -0.049,
+            "moon": 82,
+            "ts0": 0.012,
+            "ts1": 0.012,
+            "ts2": 0.03,
+            "ts3": 0.028,
+            "tsl_target0": 0.027,
+            "tsl_target1": 0.044,
+            "tsl_target2": 0.083,
+            "tsl_target3": 0.12
+        },
+        "protection": {},
+        "roi": {
+            "0": 0.22,
+            "29": 0.062,
+            "89": 0.028,
+            "205": 0
+        },
+        "stoploss": {
+            "stoploss": -0.034
+        }
+    },
+    "ft_stratparam_v": 1,
+    "export_time": "2024-02-13 16:57:22.380302+00:00"
+}

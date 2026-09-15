@@ -1,0 +1,57 @@
+{
+    "rustc": 17273738520181233363,
+    "features": "[\"connect\", \"default\", \"handshake\", \"native-tls\", \"native-tls-crate\", \"stream\", \"tokio-native-tls\"]",
+    "declared_features": "[\"__rustls-tls\", \"connect\", \"default\", \"handshake\", \"native-tls\", \"native-tls-crate\", \"native-tls-vendored\", \"rustls\", \"rustls-native-certs\", \"rustls-tls-native-roots\", \"rustls-tls-webpki-roots\", \"stream\", \"tokio-native-tls\", \"tokio-rustls\", \"webpki-roots\"]",
+    "target": 2433367608443825,
+    "profile": 2241668132362809309,
+    "path": 13731293251447164791,
+    "deps": [
+        [
+            6336150278079937696,
+            "tungstenite",
+            false,
+            4685033435723428796
+        ],
+        [
+            7720834239451334583,
+            "tokio",
+            false,
+            11132737003431289896
+        ],
+        [
+            10629569228670356391,
+            "futures_util",
+            false,
+            2492517635115569075
+        ],
+        [
+            12186126227181294540,
+            "tokio_native_tls",
+            false,
+            15828889187650113308
+        ],
+        [
+            13066042571740262168,
+            "log",
+            false,
+            5542210390493487825
+        ],
+        [
+            16785601910559813697,
+            "native_tls_crate",
+            false,
+            1729884746252947236
+        ]
+    ],
+    "local": [
+        {
+            "CheckDepInfo": {
+                "dep_info": "debug\\.fingerprint\\tokio-tungstenite-018fc6aaf6e22027\\dep-lib-tokio_tungstenite",
+                "checksum": false
+            }
+        }
+    ],
+    "rustflags": [],
+    "config": 2069994364910194474,
+    "compile_kind": 0
+}

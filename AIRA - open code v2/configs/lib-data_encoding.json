@@ -1,0 +1,20 @@
+{
+    "rustc": 17273738520181233363,
+    "features": "[\"alloc\", \"default\", \"std\"]",
+    "declared_features": "[\"alloc\", \"default\", \"std\"]",
+    "target": 11695827766092040444,
+    "profile": 14175588574914100172,
+    "path": 15364637002109662794,
+    "deps": [],
+    "local": [
+        {
+            "CheckDepInfo": {
+                "dep_info": "debug\\.fingerprint\\data-encoding-0366a67cb8405753\\dep-lib-data_encoding",
+                "checksum": false
+            }
+        }
+    ],
+    "rustflags": [],
+    "config": 2069994364910194474,
+    "compile_kind": 0
+}

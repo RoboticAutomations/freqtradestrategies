@@ -1,0 +1,89 @@
+{
+    "strategy_name": "Auto_EI_t4c0s",
+    "params": {
+        "stoploss": {
+            "stoploss": -0.99
+        },
+        "trailing": {
+            "trailing_stop": false,
+            "trailing_stop_positive": null,
+            "trailing_stop_positive_offset": 0.0,
+            "trailing_only_offset_is_reached": false
+        },
+        "buy": {
+            "atr_length": 23,
+            "b01": 8.1,
+            "b02": 3.2,
+            "b03": 6.8,
+            "b04": 9.3,
+            "b05": 4.6,
+            "b06": 1.8,
+            "base_nb_candles_buy": 17,
+            "buy_adx": 28,
+            "buy_ema_cofi": 0.969,
+            "buy_ewo_high": 5.687,
+            "buy_fastd": 23,
+            "buy_fastk": 30,
+            "fib_dn": 2.5,
+            "fib_up": 9.5,
+            "increment": 1.0007,
+            "lambo2_ema_14_factor": 0.967,
+            "lambo2_rsi_14_limit": 27,
+            "lambo2_rsi_4_limit": 32,
+            "low_offset": 0.995,
+            "mean_dn": 1.6,
+            "mean_up": 3.3,
+            "rsi_buy": 54,
+            "window": 30,
+            "x01": 4.2,
+            "x02": 1.3,
+            "x03": 1.2,
+            "x04": 1.3,
+            "x05": 4.2,
+            "z01": 2.1,
+            "zero_dn": 4.1,
+            "zero_up": 6.6
+        },
+        "sell": {
+            "base_nb_candles_sell": 14,
+            "day1": 1,
+            "day2": 4,
+            "day3": 5,
+            "day4": 8,
+            "fib_dns": 2.3,
+            "fib_ups": 1.6,
+            "high_offset": 1.012,
+            "high_offset_2": 1.014,
+            "mean_dns": 2.2,
+            "mean_ups": 5.4,
+            "moon": 0.004,
+            "s01": 8.0,
+            "s02": 3.5,
+            "s03": 10.0,
+            "s04": 6.3,
+            "s05": 2.2,
+            "s06": 6.8,
+            "unclog1": 0.15,
+            "unclog2": 0.16,
+            "unclog3": 0.12,
+            "unclog4": 0.18,
+            "y01": 3.6,
+            "y02": 3.4,
+            "y03": 2.6,
+            "zero_dns": 7.3,
+            "zero_ups": 1.8
+        },
+        "protection": {},
+        "roi": {
+            "0": 0.243,
+            "46": 0.035,
+            "127": 0.015,
+            "237": 0
+        },
+        "max_open_trades": {
+            "max_open_trades": 1
+        }
+    },
+    "ft_stratparam_v": 1,
+    "export_time": "2024-07-08 20:22:53.003868+00:00"
+}

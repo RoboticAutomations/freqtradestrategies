@@ -1,0 +1,11 @@
+{
+    "bots": [],
+    "summary_schedule": {
+        "times": [
+            "08:00",
+            "20:00"
+        ],
+        "timezone": "Europe/Berlin"
+    },
+    "_comment": "Add your freqtrade bots here. Each bot needs: name, url, username, password, mode (dry_run|live), strategy"
+}

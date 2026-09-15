@@ -1,0 +1,79 @@
+{
+    "strategy_name": "AWATRCT",
+    "params": {
+        "stoploss": {
+            "stoploss": -0.318
+        },
+        "buy": {
+            "atr_buy": 2.1,
+            "base_nb_candles_buy": 51,
+            "ewo_bear_x": 1.78,
+            "ewo_bull_x": 1.214,
+            "ewo_high_x": 1.37,
+            "ewo_lo_limit": -4.8,
+            "ewo_xo_limit": -0.5,
+            "fast_ewo": 6,
+            "fs_ewo": 47,
+            "low_offset": 0.96,
+            "rsi_buy_high": 57,
+            "rsi_buy_low": 32,
+            "sf_ewo": 36,
+            "slow_ewo": 88,
+            "ss_ewo": 183
+        },
+        "sell": {
+            "atr_sell": 0.9,
+            "base_nb_candles_sell": 42,
+            "high_offset": 1.0,
+            "ts0": 0.015,
+            "ts1": 0.013,
+            "ts2": 0.02,
+            "ts3": 0.03,
+            "ts4": 0.05,
+            "ts5": 0.04,
+            "tsl_target0": 0.035,
+            "tsl_target1": 0.043,
+            "tsl_target2": 0.082,
+            "tsl_target3": 0.15,
+            "tsl_target4": 0.2,
+            "tsl_target5": 0.2
+        },
+        "protection": {
+            "cooldown_lookback": 47,
+            "lowprofit_only_per_pair": false,
+            "lowprofit_protection_lookback": 3,
+            "lowprofit_required_profit": 2.043,
+            "lowprofit_stop_duration": 28,
+            "lowprofit_trade_limit": 2,
+            "maxdrawdown_allowed_drawdown": 0.086,
+            "maxdrawdown_protection_lookback": 7,
+            "maxdrawdown_stop_duration": 73,
+            "maxdrawdown_trade_limit": 2,
+            "stop_duration": 80,
+            "stop_protection_only_per_pair": true,
+            "stop_protection_only_per_side": true,
+            "stop_protection_required_profit": -0.903,
+            "stop_protection_trade_limit": 6,
+            "use_lowprofit_protection": true,
+            "use_maxdrawdown_protection": true,
+            "use_stop_protection": true
+        },
+        "roi": {
+            "0": 0.34900000000000003,
+            "89": 0.075,
+            "176": 0.043,
+            "399": 0
+        },
+        "trailing": {
+            "trailing_stop": true,
+            "trailing_stop_positive": 0.07,
+            "trailing_stop_positive_offset": 0.08,
+            "trailing_only_offset_is_reached": false
+        },
+        "max_open_trades": {
+            "max_open_trades": 2
+        }
+    },
+    "ft_stratparam_v": 1,
+    "export_time": "2024-09-21 04:06:44.331427+00:00"
+}

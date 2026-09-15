@@ -1,0 +1,73 @@
+{
+    "strategy_name": "OmniAdaptiveAlpha",
+    "params": {
+        "trailing": {
+            "trailing_stop": true,
+            "trailing_stop_positive": 0.008,
+            "trailing_stop_positive_offset": 0.025,
+            "trailing_only_offset_is_reached": true
+        },
+        "max_open_trades": {
+            "max_open_trades": 3
+        },
+        "buy": {
+            "adx_threshold": 20,
+            "bb_length": 22,
+            "bb_mult": 2.5,
+            "btc_adx_confirm": 19,
+            "cci_threshold": 135,
+            "daily_slope_threshold": 0.0018,
+            "dca_atr_mult": 1.6,
+            "dca_cooldown_minutes": 79,
+            "dca_max_depth": -0.27,
+            "dca_rsi_cap": 71,
+            "enable_pyramiding": true,
+            "initial_safety_order_trigger": -0.013,
+            "kc_scaler": 1.4,
+            "macd_fast": 12,
+            "macd_signal": 9,
+            "macd_slow": 26,
+            "max_safety_orders": 3,
+            "max_spread_pct": 0.018,
+            "max_stake_scale": 1.97,
+            "mfi_threshold": 26,
+            "min_stake_scale": 0.8,
+            "pyramid_scale": 0.57,
+            "pyramid_trigger": 0.12,
+            "risk_target_atr": 0.021,
+            "rsi_low": 29,
+            "safety_order_step_scale": 1.37,
+            "safety_order_volume_scale": 1.28,
+            "supertrend_multiplier": 3.4,
+            "supertrend_period": 18,
+            "vol_ma_factor": 0.46
+        },
+        "sell": {
+            "dyn_trail_enable": true,
+            "dyn_trail_loosen": 1.44,
+            "dyn_trail_tighten": 0.82,
+            "rsi_high": 60,
+            "scaleout_profit_1": 0.12,
+            "scaleout_profit_2": 0.236,
+            "scaleout_size_1": 0.33,
+            "scaleout_size_2": 0.39
+        },
+        "protection": {
+            "cooldown_lookback": 2,
+            "max_drawdown_allowed": 0.18,
+            "stop_duration": 72,
+            "use_stop_protection": true
+        },
+        "roi": {
+            "0": 0.225,
+            "81": 0.047,
+            "116": 0.015,
+            "349": 0
+        },
+        "stoploss": {
+            "stoploss": -0.279
+        }
+    },
+    "ft_stratparam_v": 1,
+    "export_time": "2025-09-27 15:27:57.569301+00:00"
+}

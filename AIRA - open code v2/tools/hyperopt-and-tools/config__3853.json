@@ -1,0 +1,105 @@
+{
+    "max_open_trades": 3,
+    "stake_currency": "USDT",
+    "stake_amount": "unlimited",
+    "tradable_balance_ratio": 0.99,
+    "fiat_display_currency": "USD",
+    "dry_run": true,
+    "dry_run_wallet": 1000,
+    "cancel_open_orders_on_exit": false,
+    "trading_mode": "futures",
+    "margin_mode": "isolated",
+    "unfilledtimeout": {
+        "entry": 5,
+        "exit": 1,
+        "exit_timeout_count": 0,
+        "unit": "minutes"
+    },
+    "entry_pricing": {
+        "price_side": "other",
+        "use_order_book": true,
+        "order_book_top": 1,
+        "price_last_balance": 0.0,
+        "check_depth_of_market": {
+            "enabled": false,
+            "bids_to_ask_delta": 1
+        }
+    },
+    "order_types": {
+        "entry": "market",
+        "exit": "limit",
+        "stoploss": "limit",
+        "stoploss_on_exchange": true,
+        "stoploss_on_exchange_limit_ratio": 0.99
+    },
+    "exit_pricing": {
+        "price_side": "same",
+        "use_order_book": true,
+        "order_book_top": 1
+    },
+    "custom_price_max_distance_ratio ": 0.2,
+    "exchange": {
+        "name": "binance",
+        "key": "",
+        "secret": "",
+        "ccxt_config": {},
+        "ccxt_async_config": {},
+        "pair_whitelist": [
+            "SUI/USDT:USDT",
+            "APT/USDT:USDT",
+            "OP/USDT:USDT",
+            "ARB/USDT:USDT",
+            "ORDI/USDT:USDT",
+            "ETH/USDT:USDT",
+            "BTC/USDT:USDT",
+            "BNB/USDT:USDT",
+            "SOL/USDT:USDT",
+            "AVAX/USDT:USDT",
+            "NEAR/USDT:USDT",
+            "DOT/USDT:USDT",
+            "ATOM/USDT:USDT",
+            "LINK/USDT:USDT",
+            "ETC/USDT:USDT",
+            "BCH/USDT:USDT",
+            "DOGE/USDT:USDT",
+            "TON/USDT:USDT",
+            "SEI/USDT:USDT",
+            "TAO/USDT:USDT",
+            "WLD/USDT:USDT",
+            "TIA/USDT:USDT",
+            "WIF/USDT:USDT",
+            "FTM/USDT:USDT",
+            "FET/USDT:USDT",
+            "ICP/USDT:USDT"
+        ],
+        "pair_blacklist": []
+    },
+    "pairlists": [
+        {
+            "method": "StaticPairList"
+        }
+    ],
+    "telegram": {
+        "enabled": false,
+        "token": "",
+        "chat_id": ""
+    },
+    "api_server": {
+        "enabled": false,
+        "listen_ip_address": "0.0.0.0",
+        "listen_port": 8080,
+        "verbosity": "error",
+        "enable_openapi": false,
+        "jwt_secret_key": "",
+        "ws_token": "",
+        "CORS_origins": [],
+        "username": "",
+        "password": ""
+    },
+    "bot_name": "freqtrade",
+    "initial_state": "running",
+    "force_entry_enable": false,
+    "internals": {
+        "process_throttle_secs": 5
+    }
+}

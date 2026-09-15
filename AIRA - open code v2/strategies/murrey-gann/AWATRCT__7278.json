@@ -1,0 +1,76 @@
+{
+    "strategy_name": "AWATRCTQAXGV3",
+    "params": {
+        "roi": {
+            "0": 0.539,
+            "677": 0.156,
+            "1677": 0.057,
+            "1865": 0
+        },
+        "stoploss": {
+            "stoploss": -0.318
+        },
+        "trailing": {
+            "trailing_stop": false,
+            "trailing_stop_positive": null,
+            "trailing_stop_positive_offset": 0.0,
+            "trailing_only_offset_is_reached": false
+        },
+        "buy": {
+            "atr_buy": 2.2,
+            "base_nb_candles_buy": 20,
+            "ewo_bear_x": 1.66,
+            "ewo_bull_x": 1.235,
+            "ewo_high_x": 1.38,
+            "ewo_lo_limit": -2.5,
+            "ewo_xo_limit": -0.3,
+            "fast_ewo": 5,
+            "fs_ewo": 48,
+            "low_offset": 0.99,
+            "rsi_buy_high": 51,
+            "rsi_buy_low": 46,
+            "sf_ewo": 49,
+            "slow_ewo": 92,
+            "ss_ewo": 196
+        },
+        "sell": {
+            "atr_sell": 3.1,
+            "base_nb_candles_sell": 55,
+            "high_offset": 1.04,
+            "ts0": 0.008,
+            "ts1": 0.01,
+            "ts2": 0.016,
+            "ts3": 0.039,
+            "ts4": 0.03,
+            "ts5": 0.04,
+            "tsl_target0": 0.037,
+            "tsl_target1": 0.059,
+            "tsl_target2": 0.088,
+            "tsl_target3": 0.13,
+            "tsl_target4": 0.16,
+            "tsl_target5": 0.4
+        },
+        "protection": {
+            "cooldown_lookback": 14,
+            "lowprofit_only_per_pair": false,
+            "lowprofit_protection_lookback": 3,
+            "lowprofit_required_profit": -0.674,
+            "lowprofit_stop_duration": 33,
+            "lowprofit_trade_limit": 7,
+            "maxdrawdown_allowed_drawdown": 0.067,
+            "maxdrawdown_protection_lookback": 6,
+            "maxdrawdown_stop_duration": 65,
+            "maxdrawdown_trade_limit": 4,
+            "stop_duration": 27,
+            "stop_protection_only_per_pair": false,
+            "stop_protection_only_per_side": true,
+            "stop_protection_required_profit": 0.028,
+            "stop_protection_trade_limit": 1,
+            "use_lowprofit_protection": true,
+            "use_maxdrawdown_protection": false,
+            "use_stop_protection": true
+        }
+    },
+    "ft_stratparam_v": 1,
+    "export_time": "2023-07-06 21:38:03.158254+00:00"
+}

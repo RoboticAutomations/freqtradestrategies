@@ -1,0 +1,146 @@
+{
+    "$schema": "https://schema.freqtrade.io/schema.json",
+    "trading_mode": "spot",
+    "max_open_trades": 23,
+    "stake_currency": "EUR",
+    "tradable_balance_ratio": 1,
+    "dry_run_wallet": 483,
+    "stake_amount": 15,
+    "position_adjustment_enable": true,
+    "fiat_display_currency": "EUR",
+    "dry_run": false,
+    "trailing_stop": true,
+    "emergency_exit": false,
+    "cancel_open_orders_on_exit": false,
+    "unfilledtimeout": {
+        "entry": 10,
+        "exit": 10,
+        "exit_timeout_count": 0,
+        "unit": "minutes"
+    },
+    "exit_pricing": {
+        "price_side": "same",
+        "use_order_book": true,
+        "order_book_top": 1
+    },
+    "entry_pricing": {
+        "price_side": "same",
+        "use_order_book": true,
+        "order_book_top": 1,
+        "price_last_balance": 0.0,
+        "check_depth_of_market": {
+            "enabled": false,
+            "bids_to_ask_delta": 1
+        }
+    },
+    "pairlists": [
+        {
+            "method": "StaticPairList",
+            "pair_whitelist": [
+                "BTC/EUR",
+                "XRP/EUR",
+                "ETH/EUR",
+                "SOL/EUR",
+                "BNB/EUR",
+                "DOGE/EUR",
+                "ADA/EUR",
+                "VET/EUR",
+                "PEPE/EUR",
+                "LTC/EUR",
+                "SUI/EUR",
+                "LINK/EUR",
+                "SHIB/EUR",
+                "DOT/EUR",
+                "XLM/EUR",
+                "NEAR/EUR",
+                "POL/EUR",
+                "TRX/EUR",
+                "GMT/EUR",
+                "AVAX/EUR",
+                "GALA/EUR",
+                "EGLD/EUR",
+                "ICP/EUR",
+                "BCH/EUR",
+                "RENDER/EUR",
+                "PNUT/EUR",
+                "ATOM/EUR",
+                "ARB/EUR",
+                "WIF/EUR",
+                "OP/EUR",
+                "GRT/EUR",
+                "WIN/EUR",
+                "WLD/EUR",
+                "ACT/EUR",
+                "NEIRO/EUR",
+                "APT/EUR",
+                "NOT/EUR",
+                "BOME/EUR"
+            ]
+        }
+    ],
+    "bot_name": "Freqtrade PROD 001",
+    "initial_state": "running",
+    "force_entry_enable": false,
+    "internals": {
+        "process_throttle_secs": 5
+    },
+    "exchange": {
+        "name": "binance",
+        "futures": false,
+        "key": "",
+        "secret": "",
+        "ccxt_config": {
+            "enableRateLimit": true,
+            "options": {
+                "defaultType": "spot"
+            }
+        },
+        "ccxt_async_config": {},
+        "pair_whitelist": [
+            "BTC/EUR",
+            "XRP/EUR",
+            "ETH/EUR",
+            "SOL/EUR",
+            "BNB/EUR",
+            "DOGE/EUR",
+            "ADA/EUR",
+            "VET/EUR",
+            "PEPE/EUR",
+            "LTC/EUR",
+            "SUI/EUR",
+            "LINK/EUR",
+            "SHIB/EUR",
+            "DOT/EUR",
+            "XLM/EUR",
+            "NEAR/EUR",
+            "POL/EUR",
+            "TRX/EUR",
+            "GMT/EUR",
+            "AVAX/EUR",
+            "GALA/EUR",
+            "EGLD/EUR",
+            "ICP/EUR",
+            "BCH/EUR",
+            "RENDER/EUR",
+            "PNUT/EUR",
+            "ATOM/EUR",
+            "ARB/EUR",
+            "WIF/EUR",
+            "OP/EUR",
+            "GRT/EUR",
+            "WIN/EUR",
+            "WLD/EUR",
+            "NEIRO/EUR",
+            "APT/EUR",
+            "NOT/EUR",
+            "BOME/EUR"
+        ],
+        "pair_blacklist": [
+            "BNB/.*",
+            "ACT/EUR"
+        ]
+    },
+    "pair_blacklist": [
+        "BNB/.*"
+    ]
+}

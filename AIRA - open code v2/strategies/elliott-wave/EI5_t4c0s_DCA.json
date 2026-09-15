@@ -1,0 +1,48 @@
+{
+    "strategy_name": "EI5_t4c0s_DCA",
+    "params": {
+        "trailing": {
+            "trailing_stop": false,
+            "trailing_stop_positive": null,
+            "trailing_stop_positive_offset": 0.0,
+            "trailing_only_offset_is_reached": false
+        },
+        "max_open_trades": {
+            "max_open_trades": 5
+        },
+        "buy": {
+            "atr_length": 21,
+            "base_nb_candles_buy": 15,
+            "buy_adx": 21,
+            "buy_ema_cofi": 0.968,
+            "buy_ewo_high": 3.834,
+            "buy_fastd": 23,
+            "buy_fastk": 25,
+            "increment": 1.0006,
+            "lambo2_ema_14_factor": 0.912,
+            "lambo2_rsi_14_limit": 38,
+            "lambo2_rsi_4_limit": 8,
+            "max_dca_multiplier": 1.0,
+            "rsi_buy": 53,
+            "window": 32
+        },
+        "sell": {
+            "base_nb_candles_sell": 10,
+            "day": 5,
+            "moon": 0.001,
+            "unclog": 0.18
+        },
+        "protection": {},
+        "roi": {
+            "0": 0.20800000000000002,
+            "15": 0.043,
+            "33": 0.032,
+            "144": 0
+        },
+        "stoploss": {
+            "stoploss": -0.311
+        }
+    },
+    "ft_stratparam_v": 1,
+    "export_time": "2024-04-23 14:37:02.832224+00:00"
+}

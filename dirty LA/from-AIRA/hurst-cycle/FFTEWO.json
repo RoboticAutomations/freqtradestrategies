@@ -1,0 +1,72 @@
+{
+    "strategy_name": "FFTEWO",
+    "params": {
+        "trailing": {
+            "trailing_stop": false,
+            "trailing_stop_positive": null,
+            "trailing_stop_positive_offset": 0.0,
+            "trailing_only_offset_is_reached": false
+        },
+        "buy": {
+            "ewo_bear_x": 1.72,
+            "ewo_bull_x": 1.09,
+            "ewo_high_x": 1.33,
+            "ewo_lo_limit": -1.7,
+            "increment": 1.0018,
+            "l_window_size": 60,
+            "rsi_buy_high": 51,
+            "rsi_buy_low": 46,
+            "u_window_size": 86,
+            "use0": true,
+            "use1": true,
+            "use2": true,
+            "use3": true,
+            "use4": true,
+            "use5": true,
+            "use6": false,
+            "use7": true
+        },
+        "sell": {
+            "use10": true,
+            "use11": true,
+            "use12": true,
+            "use13": false,
+            "use8": false,
+            "use9": false
+        },
+        "protection": {
+            "cooldown_lookback": 5,
+            "lowprofit_only_per_pair": false,
+            "lowprofit_protection_lookback": 6,
+            "lowprofit_required_profit": 0.0,
+            "lowprofit_stop_duration": 60,
+            "lowprofit_trade_limit": 4,
+            "maxdrawdown_allowed_drawdown": 0.0,
+            "maxdrawdown_protection_lookback": 6,
+            "maxdrawdown_stop_duration": 6,
+            "maxdrawdown_trade_limit": 10,
+            "stop_duration": 5,
+            "stop_protection_only_per_pair": false,
+            "stop_protection_only_per_side": false,
+            "stop_protection_required_profit": 0.0,
+            "stop_protection_trade_limit": 4,
+            "use_lowprofit_protection": true,
+            "use_maxdrawdown_protection": true,
+            "use_stop_protection": true
+        },
+        "roi": {
+            "0": 0.127,
+            "19": 0.08399999999999999,
+            "65": 0.039,
+            "167": 0
+        },
+        "stoploss": {
+            "stoploss": -0.184
+        },
+        "max_open_trades": {
+            "max_open_trades": 1
+        }
+    },
+    "ft_stratparam_v": 1,
+    "export_time": "2024-12-13 11:02:09.105994+00:00"
+}

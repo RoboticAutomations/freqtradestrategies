@@ -1,0 +1,91 @@
+{
+    "strategy_name": "eltoro1_4_simple",
+    "params": {
+        "roi": {
+            "0": 0.215
+        },
+        "stoploss": {
+            "stoploss": -0.25
+        },
+        "trailing": {
+            "trailing_stop": false,
+            "trailing_stop_positive": null,
+            "trailing_stop_positive_offset": 0.0,
+            "trailing_only_offset_is_reached": false
+        },
+        "buy": {
+            "max_length": 48,
+            "auto_buy": 15,
+            "auto_buy_bearzzz": 7,
+            "auto_buy_bearzzz_down": 8,
+            "auto_buy_down": 5,
+            "base_nb_candles_buy": 44,
+            "bull": 0.21,
+            "decision_length": 13,
+            "hma_buy_pc": -1,
+            "low_offset": 0.99,
+            "macdl_buy_pc": 0,
+            "macdl_buy_range": 0.03,
+            "rsi_buy": 68,
+            "rsi_buy_safe": 40,
+            "rsi_ma_buypc": 2,
+            "sma200_buy_pc": -1,
+            "willr_buy": -45,
+            "x1": 3.8,
+            "x10": 3.5,
+            "x2": 0.8,
+            "x3": 0.3,
+            "x4": 4.5,
+            "x5": 2.3,
+            "x6": 4.6,
+            "x7": 2.5,
+            "x8": 0.8,
+            "x9": 2.9
+        },
+        "sell": {
+            "auto_sell_bear": 13,
+            "auto_sell_bull": 11,
+            "base_nb_candles_sell": 32,
+            "estop": -0.5,
+            "high_offset": 1.0,
+            "high_offset_2": 1.24,
+            "hma_sell_pc": 4,
+            "macdl_sell_pc": -3,
+            "macdl_sell_range": 0.02,
+            "rsi_ma_sellpc": 1,
+            "rsi_sell": 67,
+            "rsi_sell_safe": 73,
+            "sma200_sell_pc": 1,
+            "ts0": 0.009,
+            "ts1": 0.01,
+            "ts2": 0.016,
+            "ts3": 0.026,
+            "ts4": 0.036,
+            "ts5": 0.041,
+            "tsl_target0": 0.06,
+            "tsl_target1": 0.074,
+            "tsl_target2": 0.095,
+            "tsl_target3": 0.1,
+            "tsl_target4": 0.221,
+            "tsl_target5": 0.2,
+            "willr_sell": -30,
+            "y1": 4.3,
+            "y10": 2.8,
+            "y2": 0.3,
+            "y3": 2.1,
+            "y4": 1.2,
+            "y5": 0.9,
+            "y6": 3.3,
+            "y7": 2.9,
+            "y8": 1.4,
+            "y9": 4.9
+        },
+        "protection": {
+            "cooldown_lookback": 46,
+            "stop_duration": 5,
+            "use_stop_protection": true
+        }
+    },
+    "ft_stratparam_v": 1,
+    "export_time": "2023-06-21 18:28:32.613239+00:00"
+}

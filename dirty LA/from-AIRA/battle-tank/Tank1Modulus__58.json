@@ -1,0 +1,45 @@
+{
+    "strategy_name": "Tank1Modulus",
+    "params": {
+        "trailing": {
+            "trailing_stop": false,
+            "trailing_stop_positive": null,
+            "trailing_stop_positive_offset": 0.0,
+            "trailing_only_offset_is_reached": false
+        },
+        "buy": {
+            "atr": 5,
+            "bull_bear": 109,
+            "increment": 1.0012,
+            "max_dca_multiplier": 1.2,
+            "max_epa": 3,
+            "mod": 192,
+            "peaks": 30,
+            "safety_order_reserve": 0,
+            "sensitivity": 7,
+            "trend": 32.1,
+            "volatility": 46.1,
+            "window": 40
+        },
+        "sell": {},
+        "protection": {
+            "cooldown_lookback": 1,
+            "stop_duration": 4,
+            "use_stop_protection": true
+        },
+        "roi": {
+            "0": 0.448,
+            "1275": 0.34,
+            "2774": 0.114,
+            "3386": 0
+        },
+        "stoploss": {
+            "stoploss": -0.202
+        },
+        "max_open_trades": {
+            "max_open_trades": 1
+        }
+    },
+    "ft_stratparam_v": 1,
+    "export_time": "2024-06-12 20:09:57.648805+00:00"
+}

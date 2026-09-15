@@ -1,0 +1,65 @@
+{
+    "strategy_name": "haFbm",
+    "params": {
+        "stoploss": {
+            "stoploss": -0.2
+        },
+        "trailing": {
+            "trailing_stop": false,
+            "trailing_stop_positive": null,
+            "trailing_stop_positive_offset": 0.0,
+            "trailing_only_offset_is_reached": false
+        },
+        "max_open_trades": {
+            "max_open_trades": 1
+        },
+        "buy": {
+            "dc_0": 10.9,
+            "dc_1": 6.7,
+            "dc_2": 11.4,
+            "dc_x": 3.7,
+            "filldelay": 196,
+            "fs1": 9.4,
+            "increment": 1.0009,
+            "max_dca_multiplier": 1.0,
+            "max_epa": 2,
+            "stake0": 1.0,
+            "stake1": 0.5,
+            "stake2": 0.9,
+            "stake3": 0.7,
+            "use0": true,
+            "use1": false,
+            "use2": false,
+            "use3": false,
+            "use_static": false,
+            "window_size": 382
+        },
+        "sell": {
+            "pt1": 1.5,
+            "pt2": 3.6,
+            "pt3": 0.18,
+            "pt4": 0.19,
+            "use10": false,
+            "use11": true,
+            "use12": true,
+            "use13": true
+        },
+        "protection": {
+            "cooldown_lookback": 1,
+            "stop_duration": 4,
+            "use_stop1": false,
+            "use_stop2": false,
+            "use_stop3": false,
+            "use_stop4": false,
+            "use_stop_protection": true
+        },
+        "roi": {
+            "0": 0.243,
+            "387": 0.132,
+            "1225": 0.045,
+            "3260": 0
+        }
+    },
+    "ft_stratparam_v": 1,
+    "export_time": "2024-09-12 20:12:42.444485+00:00"
+}

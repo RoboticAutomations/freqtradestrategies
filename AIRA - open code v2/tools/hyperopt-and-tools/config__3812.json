@@ -1,0 +1,155 @@
+{
+    "$schema": "https://schema.freqtrade.io/schema.json",
+    "max_open_trades": 10,
+    "stake_currency": "USDT",
+    "stake_amount": 50,
+    "tradable_balance_ratio": 0.99,
+    "fiat_display_currency": "USD",
+    "dry_run": true,
+    "dry_run_wallet": 9000,
+    "db_url": "sqlite:////freqtrade/user_data/tradesv3.sqlite",
+    "cancel_open_orders_on_exit": false,
+    "trading_mode": "futures",
+    "margin_mode": "isolated",
+    "unfilledtimeout": {
+        "entry": 10,
+        "exit": 10,
+        "exit_timeout_count": 0,
+        "unit": "minutes"
+    },
+    "entry_pricing": {
+        "price_side": "other",
+        "use_order_book": true,
+        "order_book_top": 1,
+        "price_last_balance": 0.0,
+        "check_depth_of_market": {
+            "enabled": false,
+            "bids_to_ask_delta": 1
+        }
+    },
+    "exit_pricing": {
+        "price_side": "other",
+        "use_order_book": true,
+        "order_book_top": 1
+    },
+    "exchange": {
+        "name": "bybit",
+        "key": "",
+        "secret": "",
+        "ccxt_config": {},
+        "ccxt_async_config": {},
+        "pair_whitelist": [
+            "XRP/USDT:USDT",
+            "BTC/USDT:USDT",
+            "SOL/USDT:USDT",
+            "ETH/USDT:USDT",
+            "LTC/USDT:USDT",
+            "ADA/USDT:USDT",
+            "DOT/USDT:USDT",
+            "DOGE/USDT:USDT",
+            "MATIC/USDT:USDT",
+            "AVAX/USDT:USDT",
+            "TRX/USDT:USDT",
+            "SHIB/USDT:USDT",
+            "ATOM/USDT:USDT",
+            "LINK/USDT:USDT",
+            "UNI/USDT:USDT",
+            "ALGO/USDT:USDT",
+            "XLM/USDT:USDT"
+        ],
+        "pair_blacklist": []
+    },
+    "pairlists": [
+        {
+            "method": "StaticPairList",
+            "number_assets": 20,
+            "sort_key": "quoteVolume",
+            "min_value": 0,
+            "refresh_period": 1800
+        }
+    ],
+    "telegram": {
+        "enabled": true,
+        "token": "",
+        "chat_id": "",
+        "notification_settings": {
+            "status": "on",
+            "warning": "on",
+            "startup": "on",
+            "entry": "off",
+            "entry_fill": "off",
+            "entry_cancel": "off",
+            "exit": "off",
+            "exit_fill": "off",
+            "exit_cancel": "off",
+            "protection_trigger": "off",
+            "protection_trigger_global": "off",
+            "show_candle": "off",
+            "strategy_msg": "off"
+        },
+        "keyboard": [
+            [
+                "/start",
+                "/pause",
+                "/stop"
+            ],
+            [
+                "/status",
+                "/status table",
+                "/balance"
+            ],
+            [
+                "/profit",
+                "/daily"
+            ],
+            [
+                "/forcelong",
+                "/forceshort",
+                "/forceexit"
+            ],
+            [
+                "/reload_config",
+                "/help"
+            ]
+        ]
+    },
+    "api_server": {
+        "enabled": true,
+        "listen_ip_address": "0.0.0.0",
+        "listen_port": 8080,
+        "verbosity": "error",
+        "enable_openapi": false,
+        "jwt_secret_key": "REDACTED-BY-REPO-HYGIENE",
+        "ws_token": "REDACTED-BY-REPO-HYGIENE",
+        "CORS_origins": [],
+        "username": "REDACTED-BY-REPO-HYGIENE",
+        "password": "REDACTED-BY-REPO-HYGIENE"
+    },
+    "openai_api_key": "",
+    "openai_model": "gpt-4.1-mini",
+    "openai_telegram_token": "",
+    "openai_telegram_chat_id": "",
+    "openai_daily_summary_time": "15:25",
+    "openai_summary_tz": "Europe/Moscow",
+    "openai_show_cost": false,
+    "bot_name": "freqtrade",
+    "initial_state": "running",
+    "force_entry_enable": true,
+    "internals": {
+        "process_throttle_secs": 5
+    },
+    "strategy": "DSA_General_v2",
+    "_comment_strategy_params": "======= НАСТРОЙКИ СТРАТЕГИИ — меняй здесь =======",
+    "timeframe": "15m",
+    "_comment_direction": "market_direction ",
+    "take_profit": 0.02,
+    "trailing_after_tp": true,
+    "trailing_retrace": 0.005,
+    "trailing_min_activation": 0.02,
+    "force_exit_by_days_enabled": true,
+    "force_exit_after_days": 5,
+    "safety_order_ratio": 1.2,
+    "safety_order_max_count": 6,
+    "safety_order_volume_scale": 1.2,
+    "price_deviation_initial": 0.03
+}

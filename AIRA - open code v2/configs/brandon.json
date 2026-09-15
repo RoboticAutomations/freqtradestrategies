@@ -1,0 +1,56 @@
+{
+    "kucoin": {
+        "api_url": "https://api.kucoin.com",
+        "api_key_file": "kucoin.key",
+        "config": {
+            "enabletelegrambotcontrol": 0,
+            "base_currency": "LTC",
+            "quote_currency": "USDT",
+            "buypercent": 100,
+            "live": 0,
+            "sellatloss": 0,
+            "granularity": 1800,
+            "trailingstoplosstrigger": 3.3,
+            "nosellmaxpcnt": 1.8,
+            "nosellminpcnt": -1,
+            "selllowerpct": 0,
+            "sellatresistance": 0,
+            "trailingstoploss": -1.5,
+            "disablebullonly": 1,
+            "disablebuynearhigh": 0,
+            "disablebuymacd": 0,
+            "disablebuyobv": 1,
+            "disablebuyema": 1,
+            "disablebuyelderray": 1,
+            "disablefailsafefibonaccilow": 1,
+            "disableprofitbankreversal": 0,
+            "disabletracker": 1,
+            "disabletelegram": 1,
+            "autorestart": 1,
+            "graphs": 0,
+            "verbose": 1,
+            "stats": 0,
+            "enableinsufficientfundslogging": 1
+        }
+    },
+    "telegram": {
+        "token": "",
+        "user_id": "",
+        "client_id": ""
+    },
+    "logger": {
+        "filelog": 0,
+        "logfile": "pycryptobot.log",
+        "fileloglevel": "DEBUG",
+        "consolelog": 1,
+        "consoleloglevel": "INFO"
+    },
+    "scanner": {
+        "atr72_pcnt": 3.0,
+        "enableexitaftersell": 1,
+        "enableleverage": 0,
+        "maxbotcount": 4,
+        "autoscandelay": 4,
+        "enable_buy_next": 1
+    }
+}

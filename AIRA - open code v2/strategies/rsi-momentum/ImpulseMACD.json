@@ -1,0 +1,32 @@
+{
+    "strategy_name": "ImpulseMACD",
+    "params": {
+        "buy": {
+            "check_macd_position": false,
+            "macd_ma_period": 20,
+            "macd_signal_period": 14
+        },
+        "sell": {},
+        "protection": {},
+        "roi": {
+            "0": 0.24400000000000002,
+            "245": 0.17400000000000002,
+            "935": 0.034,
+            "2251": 0
+        },
+        "stoploss": {
+            "stoploss": -0.35
+        },
+        "trailing": {
+            "trailing_stop": true,
+            "trailing_stop_positive": 0.011,
+            "trailing_stop_positive_offset": 0.013999999999999999,
+            "trailing_only_offset_is_reached": true
+        },
+        "max_open_trades": {
+            "max_open_trades": 40
+        }
+    },
+    "ft_stratparam_v": 1,
+    "export_time": "2024-06-10 08:45:15.809891+00:00"
+}
